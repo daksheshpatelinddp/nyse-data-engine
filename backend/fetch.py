@@ -56,7 +56,7 @@ OVERLAP_DAYS = int(_num_env("OVERLAP_DAYS", 5))
 MAX_FAIL_PCT = _num_env("MAX_FAIL_PCT", 2)
 NO_DATA_RETRY_DAYS = int(_num_env("NO_DATA_RETRY_DAYS", 30))
 FLUSH_ROWS = int(_num_env("FLUSH_ROWS", 1500000))
-HISTORY_START = os.getenv("HISTORY_START") or "1962-01-01"
+HISTORY_START = (os.getenv("HISTORY_START") or "").strip()[:10] or "1962-01-01"
 
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -77,7 +77,7 @@ def save_json(path, obj):
 
 
 def _ts(date_str):
-    return int(datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc).timestamp())
+    return int(datetime.strptime(str(date_str).strip()[:10], "%Y-%m-%d").replace(tzinfo=timezone.utc).timestamp())
 
 
 def _date(ts, offset=-18000):

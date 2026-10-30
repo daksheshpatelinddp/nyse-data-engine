@@ -1,0 +1,25 @@
+name: NYSE Probe
+
+# Changes nothing. Answers: can a GitHub runner reach Yahoo, Stooq and the NYSE symbol list, and what do they return?
+on:
+  workflow_dispatch:
+    inputs:
+      rate_n:
+        description: 'How many NYSE symbols to fetch in a row from Yahoo to test throttling'
+        required: false
+        default: '80'
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - name: Probe Yahoo, Stooq and the symbol list
+        env:
+          RATE_N: ${{ github.event.inputs.rate_n }}
+        run: python backend/probe.py

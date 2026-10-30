@@ -12,13 +12,17 @@ on:
   workflow_dispatch:
     inputs:
       history_start:
-        description: 'First day of history for NEW tickers, YYYY-MM-DD (empty = 1962-01-01, as far back as Yahoo goes; only used while a ticker is fetched the first time)'
+        description: 'First day of history for NEW tickers, YYYY-MM-DD (empty = 1970-01-02, as far back as Yahoo goes; only used while a ticker is fetched the first time)'
         required: false
         default: ''
       limit_symbols:
         description: 'Test only: fetch just the first N tickers (empty = all)'
         required: false
         default: ''
+      refetch_all:
+        description: 'Fetch the FULL history again for every ticker (tick once after the 50-ticker test)'
+        type: boolean
+        default: false
       check_adjustments:
         description: 'Run the dry-run build and write the review files (no R2)'
         type: boolean
@@ -58,6 +62,7 @@ jobs:
         env:
           HISTORY_START: ${{ github.event.inputs.history_start }}
           LIMIT_SYMBOLS: ${{ github.event.inputs.limit_symbols }}
+          REFETCH_ALL: ${{ github.event.inputs.refetch_all || 'false' }}
           MAX_RUNTIME_MINUTES: '270'     # stops itself after 4.5 h and keeps everything downloaded; run again to continue
         run: python backend/fetch.py
 

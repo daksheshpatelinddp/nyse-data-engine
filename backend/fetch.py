@@ -13,7 +13,7 @@ Flow of one run:
   4. a run where more than MAX_FAIL_PCT % of the tickers fail stores nothing, so the next run simply tries again
 
 Environment (all optional): MAX_RUNTIME_MINUTES, REQUEST_DELAY (0.1 s), NYSE_EXCHANGES (N; add A for NYSE American, P for Arca), INCLUDE_ETF, INCLUDE_PREFERRED,
-HISTORY_START (1962-01-01), OVERLAP_DAYS (5), MAX_FAIL_PCT (2), NO_DATA_RETRY_DAYS (30), FLUSH_ROWS (1500000), LIMIT_SYMBOLS (testing).
+HISTORY_START (1970-01-02), REFETCH_ALL, OVERLAP_DAYS (5), MAX_FAIL_PCT (2), NO_DATA_RETRY_DAYS (30), FLUSH_ROWS (1500000), LIMIT_SYMBOLS (testing).
 """
 import json
 import os
@@ -56,7 +56,7 @@ OVERLAP_DAYS = int(_num_env("OVERLAP_DAYS", 5))
 MAX_FAIL_PCT = _num_env("MAX_FAIL_PCT", 2)
 NO_DATA_RETRY_DAYS = int(_num_env("NO_DATA_RETRY_DAYS", 30))
 FLUSH_ROWS = int(_num_env("FLUSH_ROWS", 1500000))
-HISTORY_START = (os.getenv("HISTORY_START") or "").strip()[:10] or "1962-01-01"
+HISTORY_START = (os.getenv("HISTORY_START") or "").strip()[:10] or "1970-01-02"
 
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -248,6 +248,8 @@ def run(session=None, chart=get_chart, symbols=None, now=None):
     state = load_json(STATE_FILE, {})
     days = set(state.get("days") or [])
     backfilled = dict(state.get("backfilled") or {})
+    if _flag("REFETCH_ALL") and not state.get("refetch_done"):      # one-off: fetch the full history again for every ticker (rows merge by ticker+date, nothing is duplicated)
+        backfilled = {}; state["refetch_done"] = True; print("[FETCH] REFETCH_ALL: full history is fetched again for every ticker")
     no_data = dict(state.get("no_data") or {})
     retry = dict(state.get("retry") or {})                          # ticker -> first date it is missing (a failed fetch earlier)
     through = state.get("fetched_through") or ""

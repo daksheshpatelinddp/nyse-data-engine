@@ -1,0 +1,80 @@
+name: Daily NYSE Fetcher
+
+# STAGE 1 - never touches R2 (needs no R2 secrets):
+#   downloads NYSE prices from Yahoo -> RAW prices committed to git (data/raw/<year>/<yyyy-mm>.parquet), splits and dividends (data/events/)
+#   CHECKS the adjustments with a dry-run build and writes review files (data/reports/)
+# STAGE 2 - the separate workflow "NYSE Upload to R2" builds the adjusted files and writes them to R2. Run it only when the report looks right.
+# FIRST RUN: the whole history of ~2,800 tickers is fetched. If the time limit stops it, just run this workflow again - it continues.
+
+on:
+  schedule:
+    - cron: '0 23 * * 1-5'       # 19:00 New York (winter) / 18:00 (summer), after the 16:00 close
+  workflow_dispatch:
+    inputs:
+      history_start:
+        description: 'First day of history for NEW tickers, YYYY-MM-DD (empty = 1962-01-01, as far back as Yahoo goes; only used while a ticker is fetched the first time)'
+        required: false
+        default: ''
+      limit_symbols:
+        description: 'Test only: fetch just the first N tickers (empty = all)'
+        required: false
+        default: ''
+      check_adjustments:
+        description: 'Run the dry-run build and write the review files (no R2)'
+        type: boolean
+        default: true
+      recompute_factors:
+        description: 'Recompute every adjustment factor from the stored events'
+        type: boolean
+        default: false
+
+concurrency:
+  group: nyse-data
+  cancel-in-progress: false
+
+jobs:
+  nyse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      contents: write
+    env:
+      PERIOD_MODE: year          # must be the same as in "NYSE Upload to R2"
+      PYTHONUNBUFFERED: '1'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy pyarrow boto3 requests
+
+      - name: Download NYSE prices from Yahoo (raw prices into data/raw/)
+        env:
+          HISTORY_START: ${{ github.event.inputs.history_start }}
+          LIMIT_SYMBOLS: ${{ github.event.inputs.limit_symbols }}
+          MAX_RUNTIME_MINUTES: '270'     # stops itself after 4.5 h and keeps everything downloaded; run again to continue
+        run: python backend/fetch.py
+
+      - name: Check the adjustments (dry run, NOTHING is written to R2)
+        if: ${{ github.event.inputs.check_adjustments != 'false' }}
+        continue-on-error: true
+        env:
+          DRY_RUN: 'true'
+          RECOMPUTE_FACTORS: ${{ github.event.inputs.recompute_factors || 'false' }}
+        run: python backend/build.py
+
+      - name: Save raw prices, events and factors to git
+        if: ${{ !cancelled() }}
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add -A data/raw data/scrips.json data/state.json data/events data/factors_cache.csv data/reports || true
+          git commit -m "NYSE raw prices, events and factors" || exit 0
+          git pull --rebase origin main
+          git push origin main

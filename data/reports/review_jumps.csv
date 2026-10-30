@@ -1,7 +1,528 @@
 ticker,company,date,prev_close,close,ratio,nearest_ratio,note
+UVV,Universal Corporation Common Stock,1975-11-12,39.75,20.0,0.5031,0.5,looks like a missed split/bonus
+MRSH,Marsh Common Stock,1980-11-12,62.0,30.0,0.4839,0.4737,looks like a missed split/bonus
+NL,"NLI Holdings, Inc. Common Stock",1981-05-22,76.0,38.625,0.5082,0.5,looks like a missed split/bonus
+THC,Tenet Healthcare Corporation Common Stock,1981-04-30,44.0,23.5,0.5341,0.5333,looks like a missed split/bonus
+WTRG,"Essential Utilities, Inc. Common Stock",1981-07-08,47.5,8.125,0.1711,0.1667,looks like a missed split/bonus
+BBWI,"Bath & Body Works, Inc.",1982-11-23,41.75,20.875,0.5,0.5,looks like a missed split/bonus
+LXU,"LSB Industries, Inc. Common Stock",1982-12-01,2.25,0.75,0.3333,0.3333,looks like a missed split/bonus
+LXU,"LSB Industries, Inc. Common Stock",1982-12-08,1.5,0.75,0.5,0.5,looks like a missed split/bonus
+SU,Suncor Energy  Inc. Common Stock,1982-04-01,0.9375,1.875,2.0,2.0,looks like a missed split/bonus
+SU,Suncor Energy  Inc. Common Stock,1982-05-26,1.3125,5.0,3.8095,4.0,looks like a missed split/bonus
+BBWI,"Bath & Body Works, Inc.",1983-06-14,53.0,28.625,0.5401,0.5385,looks like a missed split/bonus
+NBR,Nabors Industries Ltd.,1983-11-09,3.0,1.25,0.4167,0.4167,looks like a missed split/bonus
+ODC,Oil-Dri Corporation Of America Common Stock,1983-08-03,20.5,10.5,0.5122,0.5,looks like a missed split/bonus
+TSN,"Tyson Foods, Inc. Common Stock",1983-04-18,30.25,15.0,0.4959,0.5,looks like a missed split/bonus
+BEN,"Franklin Templeton, Inc. Common Stock",1984-12-31,24.25,9.75,0.4021,0.4,looks like a missed split/bonus
+GL,Globe Life Inc. Common Stock,1984-05-30,39.25,19.625,0.5,0.5,looks like a missed split/bonus
+LNC,Lincoln National Corporation Common Stock,1984-02-01,66.5,32.25,0.485,0.4737,looks like a missed split/bonus
+WSO-B,"Watsco, Inc. Class B Common Stock",1984-06-20,13.75,7.125,0.5182,0.5263,looks like a missed split/bonus
+BBWI,"Bath & Body Works, Inc.",1985-06-26,49.875,24.75,0.4962,0.5,looks like a missed split/bonus
+BEN,"Franklin Templeton, Inc. Common Stock",1985-01-02,9.75,24.5001,2.5128,3.0,"no clean ratio (crash, spin-off or bad data?)"
+GL,Globe Life Inc. Common Stock,1985-09-17,45.0,21.875,0.4861,0.4737,looks like a missed split/bonus
+TSN,"Tyson Foods, Inc. Common Stock",1985-04-16,43.0,18.5,0.4302,0.4286,looks like a missed split/bonus
+NBR,Nabors Industries Ltd.,1986-09-09,0.375,1.0,2.6667,3.0,"no clean ratio (crash, spin-off or bad data?)"
+TRV,"The Travelers Companies, Inc. Common Stock",1986-06-09,90.25,43.25,0.4792,0.4737,looks like a missed split/bonus
+TSN,"Tyson Foods, Inc. Common Stock",1986-04-16,43.5,23.75,0.546,0.5455,looks like a missed split/bonus
+NVR,"NVR, Inc. Common Stock",1987-06-23,47.125,10.25,0.2175,0.2222,looks like a missed split/bonus
+CIA,"Citizens, Inc. Class A Common Stock ($1.00 Par)",1988-12-05,48.0,3.5,0.0729,0.0714,looks like a missed split/bonus
+CPF,Central Pacific Financial Corp New,1988-06-02,50.5,25.875,0.5124,0.5,looks like a missed split/bonus
+DVN,Devon Energy Corporation Common Stock,1988-10-03,2.9375,5.5,1.8723,2.0,"no clean ratio (crash, spin-off or bad data?)"
+KR,Kroger Company (The) Common Stock,1988-10-31,58.0,18.25,0.3147,0.3077,looks like a missed split/bonus
+KR,Kroger Company (The) Common Stock,1988-12-05,18.25,9.5,0.5205,0.5263,looks like a missed split/bonus
+LCII,LCI Industries,1988-12-27,0.25,0.125,0.5,0.5,looks like a missed split/bonus
+LCII,LCI Industries,1988-12-28,0.125,0.25,2.0,2.0,looks like a missed split/bonus
+TYL,"Tyler Technologies, Inc. Common Stock",1988-08-22,17.375,7.125,0.4101,0.4118,looks like a missed split/bonus
+PNW,Pinnacle West Capital Corporation Common Stock,1989-12-07,5.375,10.25,1.907,2.0,looks like a missed split/bonus
+BH,Biglari Holdings Inc. Class B Common Stock,1990-11-28,9.25,2.0,0.2162,0.2222,looks like a missed split/bonus
+CRD-B,Crawford & Company Common Stock,1990-08-01,31.375,15.875,0.506,0.5,looks like a missed split/bonus
+MUX,McEwen Inc. Common Stock,1990-02-20,1.3117,0.478,0.3644,0.3636,looks like a missed split/bonus
+RRC,Range Resources Corporation Common Stock,1990-04-10,0.375,0.125,0.3333,0.3333,looks like a missed split/bonus
+TCI,"Transcontinental Realty Investors, Inc. Common Stock",1990-09-10,2.0,7.25,3.625,4.0,"no clean ratio (crash, spin-off or bad data?)"
+WPP,WPP plc American Depositary Shares,1990-11-20,11.375,5.5,0.4835,0.4737,looks like a missed split/bonus
+MUX,McEwen Inc. Common Stock,1991-12-05,0.0535,0.0229,0.428,0.4286,looks like a missed split/bonus
+MUX,McEwen Inc. Common Stock,1991-12-24,0.0229,0.1185,5.1747,5.0,looks like a missed split/bonus
+SPB,"Spectrum Brands Holdings, Inc. Common Stock",1991-01-02,0.5,0.9375,1.875,2.0,"no clean ratio (crash, spin-off or bad data?)"
+CNMD,CONMED Corporation Common Stock,1992-10-09,17.5,9.125,0.5214,0.5263,looks like a missed split/bonus
+CTO,"CTO Realty Growth, Inc. Common Stock",1992-08-19,28.0,13.5,0.4821,0.4737,looks like a missed split/bonus
+HUM,Humana Inc. Common Stock,1993-03-08,20.0,6.875,0.3438,0.3333,looks like a missed split/bonus
+HXL,Hexcel Corporation Common Stock,1993-12-08,6.0,2.375,0.3958,0.4,looks like a missed split/bonus
+NVR,"NVR, Inc. Common Stock",1993-10-01,0.375,10.25,27.3333,10.0,"no clean ratio (crash, spin-off or bad data?)"
+SAFE,Safehold Inc. New Common Stock,1993-12-06,15.25,0.875,0.0574,0.0588,looks like a missed split/bonus
+SU,Suncor Energy  Inc. Common Stock,1993-12-01,0.625,22.625,36.2,10.0,"no clean ratio (crash, spin-off or bad data?)"
+EGY,"VAALCO Energy, Inc.  Common Stock",1994-11-16,1.5,0.38,0.2533,0.25,looks like a missed split/bonus
+EGY,"VAALCO Energy, Inc.  Common Stock",1994-11-28,0.308,0.616,2.0,2.0,looks like a missed split/bonus
+HUBB,Hubbell Inc Common Stock,1994-10-31,5.8702,57.876,9.8593,10.0,looks like a missed split/bonus
+LNG,"Cheniere Energy, Inc. Common Stock",1994-05-25,0.75,1.5,2.0,2.0,looks like a missed split/bonus
+AGX,"Argan, Inc. Common Stock",1995-10-13,0.0156,0.5,32.0513,10.0,"no clean ratio (crash, spin-off or bad data?)"
+AN,"AutoNation, Inc. Common Stock",1995-05-22,3.875,7.75,2.0,2.0,looks like a missed split/bonus
+EGY,"VAALCO Energy, Inc.  Common Stock",1995-09-19,0.5,0.248,0.496,0.5,looks like a missed split/bonus
+EGY,"VAALCO Energy, Inc.  Common Stock",1995-09-20,0.248,0.624,2.5161,3.0,"no clean ratio (crash, spin-off or bad data?)"
+EGY,"VAALCO Energy, Inc.  Common Stock",1995-11-01,0.248,0.5,2.0161,2.0,looks like a missed split/bonus
+EGY,"VAALCO Energy, Inc.  Common Stock",1995-11-06,0.5,0.216,0.432,0.4286,looks like a missed split/bonus
+EGY,"VAALCO Energy, Inc.  Common Stock",1995-11-07,0.216,0.408,1.8889,2.0,looks like a missed split/bonus
+EGY,"VAALCO Energy, Inc.  Common Stock",1995-12-27,0.188,0.38,2.0213,2.0,looks like a missed split/bonus
+EGY,"VAALCO Energy, Inc.  Common Stock",1995-12-28,0.38,0.188,0.4947,0.5,looks like a missed split/bonus
+ING,"ING Group, N.V. Common Stock",1995-09-27,58.375,114.0,1.9529,2.0,looks like a missed split/bonus
+ING,"ING Group, N.V. Common Stock",1995-09-28,114.0,58.375,0.5121,0.5,looks like a missed split/bonus
+CBZ,"CBIZ, Inc. Common Stock",1996-05-20,4.625,10.0,2.1622,2.0,"no clean ratio (crash, spin-off or bad data?)"
+CBZ,"CBIZ, Inc. Common Stock",1996-05-21,10.0,20.25,2.025,2.0,looks like a missed split/bonus
+EGY,"VAALCO Energy, Inc.  Common Stock",1996-01-12,0.364,0.188,0.5165,0.5263,looks like a missed split/bonus
+EGY,"VAALCO Energy, Inc.  Common Stock",1996-01-19,0.188,0.348,1.8511,2.0,"no clean ratio (crash, spin-off or bad data?)"
+EGY,"VAALCO Energy, Inc.  Common Stock",1996-06-11,0.308,0.556,1.8052,2.0,"no clean ratio (crash, spin-off or bad data?)"
+LNG,"Cheniere Energy, Inc. Common Stock",1996-05-02,2.38,1.25,0.5252,0.5263,looks like a missed split/bonus
+LNG,"Cheniere Energy, Inc. Common Stock",1996-08-07,1.06,3.88,3.6604,4.0,"no clean ratio (crash, spin-off or bad data?)"
+LEN,Lennar Corporation Class A Common Stock,1997-11-03,40.6875,16.625,0.4086,0.4118,looks like a missed split/bonus
+DECK,Deckers Outdoor Corporation Common Stock,1998-10-13,4.375,2.0,0.4571,0.4545,looks like a missed split/bonus
+MUX,McEwen Inc. Common Stock,1998-11-23,0.2686,0.1434,0.5339,0.5333,looks like a missed split/bonus
+SPB,"Spectrum Brands Holdings, Inc. Common Stock",1998-07-06,9.875,21.5,2.1772,2.0,"no clean ratio (crash, spin-off or bad data?)"
+SPB,"Spectrum Brands Holdings, Inc. Common Stock",1998-12-23,7.1875,14.25,1.9826,2.0,looks like a missed split/bonus
+BHE,"Benchmark Electronics, Inc. Common Stock",1999-10-22,29.0,15.0,0.5172,0.5263,looks like a missed split/bonus
+CSR,D/B/A Centerspace Common Stock,1999-07-16,8.125,17.875,2.2,2.0,"no clean ratio (crash, spin-off or bad data?)"
+CSR,D/B/A Centerspace Common Stock,1999-07-19,17.875,8.125,0.4545,0.4545,looks like a missed split/bonus
+DVA,DaVita Inc. Common Stock,1999-02-18,21.0,8.75,0.4167,0.4167,looks like a missed split/bonus
+EGY,"VAALCO Energy, Inc.  Common Stock",1999-02-24,0.5,0.25,0.5,0.5,looks like a missed split/bonus
+MCK,McKesson Corporation Common Stock,1999-04-28,65.75,34.5,0.5247,0.5263,looks like a missed split/bonus
+MD,"Pediatrix Medical Group, Inc. Common Stock",1999-02-12,53.625,28.0,0.5221,0.5263,looks like a missed split/bonus
+MED,MEDIFAST INC Common Stock,1999-09-21,0.375,0.1562,0.4165,0.4167,looks like a missed split/bonus
+MED,MEDIFAST INC Common Stock,1999-10-26,0.2812,0.5625,2.0004,2.0,looks like a missed split/bonus
+MED,MEDIFAST INC Common Stock,1999-10-27,0.5625,0.25,0.4444,0.4444,looks like a missed split/bonus
+MED,MEDIFAST INC Common Stock,1999-11-10,0.4375,0.1875,0.4286,0.4286,looks like a missed split/bonus
+MED,MEDIFAST INC Common Stock,1999-12-02,0.1875,0.375,2.0,2.0,looks like a missed split/bonus
+MED,MEDIFAST INC Common Stock,1999-12-03,0.375,0.1875,0.5,0.5,looks like a missed split/bonus
+MED,MEDIFAST INC Common Stock,1999-12-07,0.1875,0.4688,2.5003,3.0,"no clean ratio (crash, spin-off or bad data?)"
+MED,MEDIFAST INC Common Stock,1999-12-08,0.4688,0.1875,0.4,0.4,looks like a missed split/bonus
+MED,MEDIFAST INC Common Stock,1999-12-23,0.25,0.0938,0.3752,0.375,looks like a missed split/bonus
+NSP,"Insperity, Inc. Common Stock",1999-01-28,31.25,15.875,0.508,0.5,looks like a missed split/bonus
+ARL,"American Realty Investors, Inc. Common Stock",2000-06-15,15.4375,6.6875,0.4332,0.4375,looks like a missed split/bonus
+BCE,"BCE, Inc. Common Stock",2000-05-09,113.6875,25.8125,0.227,0.2308,looks like a missed split/bonus
+CBZ,"CBIZ, Inc. Common Stock",2000-01-31,6.9375,3.7188,0.536,0.5385,looks like a missed split/bonus
+DAR,Darling Ingredients Inc. Common Stock,2000-09-20,0.5625,0.25,0.4444,0.4444,looks like a missed split/bonus
+DAR,Darling Ingredients Inc. Common Stock,2000-09-21,0.25,0.6875,2.75,3.0,"no clean ratio (crash, spin-off or bad data?)"
+DX,"Dynex Capital, Inc. Common Stock",2000-03-10,7.4375,3.9375,0.5294,0.5294,looks like a missed split/bonus
+EGY,"VAALCO Energy, Inc.  Common Stock",2000-10-31,0.156,0.281,1.8013,2.0,"no clean ratio (crash, spin-off or bad data?)"
+EGY,"VAALCO Energy, Inc.  Common Stock",2000-12-12,0.51,0.25,0.4902,0.5,looks like a missed split/bonus
+IMAX,Imax Corporation Common Stock,2000-10-12,14.5,4.2812,0.2953,0.3,looks like a missed split/bonus
+MED,MEDIFAST INC Common Stock,2000-01-03,0.1875,0.3438,1.8336,2.0,"no clean ratio (crash, spin-off or bad data?)"
+MED,MEDIFAST INC Common Stock,2000-04-27,0.1875,0.375,2.0,2.0,looks like a missed split/bonus
+MED,MEDIFAST INC Common Stock,2000-06-06,0.1875,0.5,2.6667,3.0,"no clean ratio (crash, spin-off or bad data?)"
+MED,MEDIFAST INC Common Stock,2000-09-12,0.25,0.5,2.0,2.0,looks like a missed split/bonus
+REX,REX American Resources Corporation,2000-01-06,30.875,16.125,0.5223,0.5263,looks like a missed split/bonus
+TCI,"Transcontinental Realty Investors, Inc. Common Stock",2000-06-16,9.75,3.0,0.3077,0.3077,looks like a missed split/bonus
+UAMY,United States Antimony Corporation Common Stock,2000-06-15,0.4062,0.75,1.8464,2.0,"no clean ratio (crash, spin-off or bad data?)"
 AES,The AES Corporation Common Stock,2001-09-26,24.25,12.25,0.5052,0.5,looks like a missed split/bonus
+CYD,China Yuchai International Limited Common Stock,2001-09-28,0.56,0.3,0.5357,0.5333,looks like a missed split/bonus
+MED,MEDIFAST INC Common Stock,2001-10-16,0.15,0.32,2.1333,2.0,"no clean ratio (crash, spin-off or bad data?)"
+ROK,"Rockwell Automation, Inc. Common Stock",2001-07-02,38.12,14.7,0.3856,0.3846,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2001-05-22,0.21,0.38,1.8095,2.0,"no clean ratio (crash, spin-off or bad data?)"
+UAMY,United States Antimony Corporation Common Stock,2001-01-02,0.1719,0.3125,1.8179,2.0,"no clean ratio (crash, spin-off or bad data?)"
+UAMY,United States Antimony Corporation Common Stock,2001-05-16,0.25,0.47,1.88,2.0,"no clean ratio (crash, spin-off or bad data?)"
+AORT,"Artivion, Inc. Common Stock",2002-08-15,5.5,2.03,0.3691,0.3636,looks like a missed split/bonus
+AORT,"Artivion, Inc. Common Stock",2002-09-06,1.89,4.1,2.1693,2.0,"no clean ratio (crash, spin-off or bad data?)"
+AVNT,Avient Corporation Common Stock,2002-12-18,6.4,3.2,0.5,0.5,looks like a missed split/bonus
+DAR,Darling Ingredients Inc. Common Stock,2002-01-14,0.7,0.32,0.4571,0.4545,looks like a missed split/bonus
+NSP,"Insperity, Inc. Common Stock",2002-09-24,2.17,4.03,1.8571,2.0,"no clean ratio (crash, spin-off or bad data?)"
+PWR,"Quanta Services, Inc. Common Stock",2002-07-02,9.14,2.92,0.3195,0.3077,looks like a missed split/bonus
+THC,Tenet Healthcare Corporation Common Stock,2002-11-08,27.95,14.9,0.5331,0.5333,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2002-10-21,0.04,0.02,0.5,0.5,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2002-10-22,0.02,0.04,2.0,2.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2002-10-23,0.04,0.02,0.5,0.5,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2002-11-21,0.03,0.01,0.3333,0.3333,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2002-11-22,0.01,0.05,5.0,5.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2002-12-02,0.04,0.02,0.5,0.5,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2002-12-04,0.02,0.07,3.5,4.0,"no clean ratio (crash, spin-off or bad data?)"
+TRAK,"ReposiTrak, Inc. Common Stock",2002-12-09,0.05,0.02,0.4,0.4,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2002-12-11,0.02,0.04,2.0,2.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2002-12-16,0.04,0.02,0.5,0.5,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2002-12-19,0.02,0.01,0.5,0.5,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2002-12-20,0.01,0.02,2.0,2.0,looks like a missed split/bonus
+UHAL,U-Haul Holding Company Common Stock,2002-10-16,7.2,3.23,0.4486,0.4444,looks like a missed split/bonus
+WMB,"Williams Companies, Inc. (The) Common Stock",2002-07-22,5.16,2.01,0.3895,0.3846,looks like a missed split/bonus
+WMB,"Williams Companies, Inc. (The) Common Stock",2002-07-29,0.99,1.99,2.0101,2.0,looks like a missed split/bonus
+WT,"WisdomTree, Inc. Common Stock",2002-10-28,0.03,0.07,2.3333,2.0,"no clean ratio (crash, spin-off or bad data?)"
+WT,"WisdomTree, Inc. Common Stock",2002-11-06,0.07,0.19,2.7143,3.0,"no clean ratio (crash, spin-off or bad data?)"
+AGX,"Argan, Inc. Common Stock",2003-01-03,3.5,7.0,2.0,2.0,looks like a missed split/bonus
+EHC,Encompass Health Corporation Common Stock,2003-03-26,3.91,0.11,0.0281,0.05,"no clean ratio (crash, spin-off or bad data?)"
+EHC,Encompass Health Corporation Common Stock,2003-07-07,0.9,1.89,2.1,2.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-01-07,0.02,0.04,2.0,2.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-01-09,0.04,0.02,0.5,0.5,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-01-28,0.02,0.01,0.5,0.5,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-01-29,0.01,0.05,5.0,5.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-01-31,0.04,0.01,0.25,0.25,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-02-13,0.01,0.04,4.0,4.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-02-18,0.04,0.01,0.25,0.25,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-02-20,0.01,0.05,5.0,5.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-02-26,0.04,0.01,0.25,0.25,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-02-28,0.01,0.04,4.0,4.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-03-03,0.04,0.01,0.25,0.25,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-03-05,0.01,0.03,3.0,3.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-03-17,0.03,0.01,0.3333,0.3333,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-03-24,0.01,0.08,8.0,10.0,"no clean ratio (crash, spin-off or bad data?)"
+TRAK,"ReposiTrak, Inc. Common Stock",2003-03-31,0.1,0.02,0.2,0.2,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-04-01,0.02,0.05,2.5,3.0,"no clean ratio (crash, spin-off or bad data?)"
+TRAK,"ReposiTrak, Inc. Common Stock",2003-04-03,0.05,0.1,2.0,2.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-04-14,0.05,0.1,2.0,2.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-04-15,0.1,0.02,0.2,0.2,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-04-16,0.02,0.01,0.5,0.5,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-04-17,0.01,0.06,6.0,5.0,"no clean ratio (crash, spin-off or bad data?)"
+TRAK,"ReposiTrak, Inc. Common Stock",2003-04-22,0.04,0.08,2.0,2.0,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-04-23,0.08,0.03,0.375,0.375,looks like a missed split/bonus
+TRAK,"ReposiTrak, Inc. Common Stock",2003-12-30,0.02,0.04,2.0,2.0,looks like a missed split/bonus
+UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,2003-06-18,0.04,0.02,0.5,0.5,looks like a missed split/bonus
+UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,2003-07-21,0.02,0.04,2.0,2.0,looks like a missed split/bonus
+UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,2003-08-19,0.06,0.12,2.0,2.0,looks like a missed split/bonus
+UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,2003-08-20,0.12,0.06,0.5,0.5,looks like a missed split/bonus
+UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,2003-08-27,0.05,0.1,2.0,2.0,looks like a missed split/bonus
+WT,"WisdomTree, Inc. Common Stock",2003-06-13,0.05,0.12,2.4,2.0,"no clean ratio (crash, spin-off or bad data?)"
+FNB,F.N.B. Corporation Common Stock,2004-01-02,35.45,19.4,0.5472,0.5455,looks like a missed split/bonus
+IIIN,"Insteel Industries, Inc. Common Stock",2004-02-19,1.05,0.55,0.5238,0.5263,looks like a missed split/bonus
+IIIN,"Insteel Industries, Inc. Common Stock",2004-02-24,0.55,1.0,1.8182,2.0,"no clean ratio (crash, spin-off or bad data?)"
+SGU,Star Group L.P. Common Stock,2004-10-18,21.6,4.32,0.2,0.2,looks like a missed split/bonus
+SKE,Skeena Resources Limited Common Shares,2004-12-06,0.227,0.45,1.9824,2.0,looks like a missed split/bonus
+UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,2004-05-27,0.05,0.1,2.0,2.0,looks like a missed split/bonus
+UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,2004-06-24,0.1,0.05,0.5,0.5,looks like a missed split/bonus
+WT,"WisdomTree, Inc. Common Stock",2004-10-25,0.02,0.01,0.5,0.5,looks like a missed split/bonus
+WT,"WisdomTree, Inc. Common Stock",2004-10-26,0.01,0.02,2.0,2.0,looks like a missed split/bonus
+WT,"WisdomTree, Inc. Common Stock",2004-11-18,0.04,1.5,37.5,10.0,"no clean ratio (crash, spin-off or bad data?)"
+WT,"WisdomTree, Inc. Common Stock",2004-11-19,1.5,0.75,0.5,0.5,looks like a missed split/bonus
+MUX,McEwen Inc. Common Stock,2005-08-01,0.3728,0.7744,2.0773,2.0,looks like a missed split/bonus
+UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,2005-11-15,0.05,0.15,3.0,3.0,looks like a missed split/bonus
+UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,2005-11-16,0.15,0.5,3.3333,3.0,"no clean ratio (crash, spin-off or bad data?)"
+VYX,NCR Voyix Corporation Common Stock,2007-10-01,49.8,23.93,0.4805,0.4737,looks like a missed split/bonus
+AGM,Federal Agricultural Mortgage Corporation Common Stock,2008-09-22,18.12,7.4,0.4084,0.4118,looks like a missed split/bonus
+AGM-A,Federal Agricultural Mortgage Corporation Common Stock,2008-09-22,10.71,5.01,0.4678,0.4667,looks like a missed split/bonus
+AGM-A,Federal Agricultural Mortgage Corporation Common Stock,2008-09-26,4.5,2.45,0.5444,0.5455,looks like a missed split/bonus
+AIG,"American International Group, Inc. New Common Stock",2008-09-15,12.14,4.76,0.3921,0.3846,looks like a missed split/bonus
+AIG,"American International Group, Inc. New Common Stock",2008-09-17,3.75,2.05,0.5467,0.5455,looks like a missed split/bonus
+BLDR,"Builders FirstSource, Inc. Common Stock",2008-11-19,1.6653,0.8999,0.5404,0.5385,looks like a missed split/bonus
+BXC,Bluelinx Holdings Inc. Common Stock,2008-12-23,0.8929,1.9558,2.1904,2.0,"no clean ratio (crash, spin-off or bad data?)"
+CNO,"CNO Financial Group, Inc. Common Stock",2008-09-18,4.4,7.95,1.8068,2.0,"no clean ratio (crash, spin-off or bad data?)"
+DIN,"Dine Brands Global, Inc. Common Stock",2008-10-28,9.06,18.3,2.0199,2.0,looks like a missed split/bonus
+EVC,Entravision Communications Corporation Common Stock,2008-10-28,1.21,3.17,2.6198,3.0,"no clean ratio (crash, spin-off or bad data?)"
+EVC,Entravision Communications Corporation Common Stock,2008-12-19,0.66,1.67,2.5303,3.0,"no clean ratio (crash, spin-off or bad data?)"
+FIS,"Fidelity National Information Services, Inc. Common Stock",2008-07-03,37.25,20.14,0.5407,0.5385,looks like a missed split/bonus
+FLUT,Flutter Entertainment plc Ordinary Shares,2008-10-15,33.1,14.2,0.429,0.4286,looks like a missed split/bonus
+GNW,Genworth Financial Inc Common Stock,2008-10-13,3.5,6.32,1.8057,2.0,"no clean ratio (crash, spin-off or bad data?)"
+GNW,Genworth Financial Inc Common Stock,2008-11-11,2.72,1.24,0.4559,0.4545,looks like a missed split/bonus
+GNW,Genworth Financial Inc Common Stock,2008-11-24,0.9,1.7,1.8889,2.0,looks like a missed split/bonus
+GRBK,"Green Brick Partners, Inc. Common Stock",2008-08-12,2.52,0.93,0.369,0.3636,looks like a missed split/bonus
+HIG,"The Hartford Insurance Group, Inc. Common Stock",2008-10-30,19.86,9.62,0.4844,0.4737,looks like a missed split/bonus
+HIG,"The Hartford Insurance Group, Inc. Common Stock",2008-12-05,7.21,14.59,2.0236,2.0,looks like a missed split/bonus
+HOS,"Hornbeck Offshore Services, Inc. Common Stock",2008-11-20,7.33,4.0,0.5457,0.5455,looks like a missed split/bonus
+HUN,Huntsman Corporation Common Stock,2008-12-15,5.85,2.98,0.5094,0.5,looks like a missed split/bonus
+IDT,IDT Corporation Class B Common Stock,2008-12-22,0.1695,0.3178,1.8749,2.0,"no clean ratio (crash, spin-off or bad data?)"
+KF,"Korea Fund, Inc. (The) New Common Stock",2008-12-29,117.99,32.02,0.2714,0.2727,looks like a missed split/bonus
+LAD,"Lithia Motors, Inc. Common Stock",2008-10-29,1.6,3.56,2.225,2.0,"no clean ratio (crash, spin-off or bad data?)"
+LAR,Lithium Argentina AG Common Shares,2008-12-09,0.07,0.14,2.0,2.0,looks like a missed split/bonus
+LAR,Lithium Argentina AG Common Shares,2008-12-23,0.09,0.18,2.0,2.0,looks like a missed split/bonus
+MO,"Altria Group, Inc.",2008-03-31,73.83,22.2,0.3007,0.3,looks like a missed split/bonus
+MS,Morgan Stanley Common Stock,2008-10-13,9.68,18.1,1.8698,2.0,"no clean ratio (crash, spin-off or bad data?)"
+MXE,"Mexico Equity and Income Fund, Inc. (The) Common Stock",2008-12-23,13.15,6.38,0.4852,0.4737,looks like a missed split/bonus
+NX,Quanex Building Products Corporation Common Stock,2008-04-24,54.17,16.37,0.3022,0.3,looks like a missed split/bonus
+OGC,OceanaGold Corporation Common Shares,2008-10-03,0.56,0.3,0.5357,0.5333,looks like a missed split/bonus
+OGG,Osisko Gold Group Inc. Common Shares,2008-10-28,0.158,0.055,0.3481,0.3571,looks like a missed split/bonus
+OGG,Osisko Gold Group Inc. Common Shares,2008-11-04,0.055,0.177,3.2182,3.0,"no clean ratio (crash, spin-off or bad data?)"
+OGG,Osisko Gold Group Inc. Common Shares,2008-11-25,0.177,0.089,0.5028,0.5,looks like a missed split/bonus
+SAFE,Safehold Inc. New Common Stock,2008-09-29,3.8,1.75,0.4605,0.4615,looks like a missed split/bonus
+SKE,Skeena Resources Limited Common Shares,2008-09-12,0.166,0.07,0.4217,0.4167,looks like a missed split/bonus
+SKE,Skeena Resources Limited Common Shares,2008-11-18,0.063,0.016,0.254,0.25,looks like a missed split/bonus
+SUZ,Suzano S.A. American Depositary Shares (each representing One Ordinary Share),2008-12-11,11.36,4.0,0.3521,0.3571,looks like a missed split/bonus
+SUZ,Suzano S.A. American Depositary Shares (each representing One Ordinary Share),2008-12-22,4.0,11.944,2.986,3.0,looks like a missed split/bonus
+AGM,Federal Agricultural Mortgage Corporation Common Stock,2009-05-12,3.62,7.73,2.1354,2.0,"no clean ratio (crash, spin-off or bad data?)"
+AGM-A,Federal Agricultural Mortgage Corporation Common Stock,2009-05-12,2.32,5.08,2.1897,2.0,"no clean ratio (crash, spin-off or bad data?)"
+BXMT,"Blackstone Mortgage Trust, Inc. Common Stock",2009-03-12,1.12,2.17,1.9375,2.0,looks like a missed split/bonus
+CNO,"CNO Financial Group, Inc. Common Stock",2009-03-02,1.21,0.51,0.4215,0.4167,looks like a missed split/bonus
+DAN,Dana Incorporated Common Stock,2009-03-10,0.2,0.4,2.0,2.0,looks like a missed split/bonus
+DCH,Dauch Corporation Common Stock,2009-05-08,1.51,4.0,2.649,3.0,"no clean ratio (crash, spin-off or bad data?)"
+DCH,Dauch Corporation Common Stock,2009-08-18,2.62,5.7,2.1756,2.0,"no clean ratio (crash, spin-off or bad data?)"
+EVC,Entravision Communications Corporation Common Stock,2009-03-20,0.17,0.31,1.8235,2.0,"no clean ratio (crash, spin-off or bad data?)"
+IDT,IDT Corporation Class B Common Stock,2009-03-04,0.7062,1.3347,1.89,2.0,looks like a missed split/bonus
+LYG,Lloyds Banking Group Plc American Depositary Shares,2009-01-20,6.0547,2.5488,0.421,0.4167,looks like a missed split/bonus
+MOD,Modine Manufacturing Company Common Stock,2009-02-11,1.77,0.93,0.5254,0.5263,looks like a missed split/bonus
+NNI,"Nelnet, Inc. Common Stock",2009-02-26,10.74,4.91,0.4572,0.4545,looks like a missed split/bonus
+NVGS,Navigator Holdings Ltd. Ordinary Shares (Marshall Islands),2009-03-05,37.25,12.0,0.3221,0.3333,looks like a missed split/bonus
+NWG,"NatWest Group plc American Depositary Shares, (each representing two (2) Ordinary Shares)",2009-01-20,10.85,3.33,0.3069,0.3077,looks like a missed split/bonus
+OGC,OceanaGold Corporation Common Shares,2009-01-09,0.11,0.21,1.9091,2.0,looks like a missed split/bonus
+OVV,Ovintiv Inc. (DE),2009-12-09,51.09,28.09,0.5498,0.5455,looks like a missed split/bonus
+RDN,Radian Group Inc. Common Stock,2009-08-05,3.67,6.72,1.8311,2.0,"no clean ratio (crash, spin-off or bad data?)"
+SKE,Skeena Resources Limited Common Shares,2009-03-26,0.016,0.035,2.1875,2.0,"no clean ratio (crash, spin-off or bad data?)"
+SKE,Skeena Resources Limited Common Shares,2009-11-23,0.052,0.147,2.8269,3.0,looks like a missed split/bonus
+STT,State Street Corporation Common Stock,2009-01-20,36.35,14.89,0.4096,0.4118,looks like a missed split/bonus
+SMBK,"SmartFinancial, Inc. Common Stock",2010-08-27,1.65,3.0,1.8182,2.0,"no clean ratio (crash, spin-off or bad data?)"
+VPG,"Vishay Precision Group, Inc. Common Stock",2010-07-07,61.04,11.7,0.1917,0.2,looks like a missed split/bonus
+WY,Weyerhaeuser Company Common Stock,2010-07-20,41.83,15.94,0.3811,0.3846,looks like a missed split/bonus
+OGG,Osisko Gold Group Inc. Common Shares,2011-02-09,0.11,0.488,4.4364,4.0,"no clean ratio (crash, spin-off or bad data?)"
+OGG,Osisko Gold Group Inc. Common Shares,2011-02-15,0.403,0.733,1.8189,2.0,"no clean ratio (crash, spin-off or bad data?)"
+BXMT,"Blackstone Mortgage Trust, Inc. Common Stock",2012-12-21,3.7,1.82,0.4919,0.5,looks like a missed split/bonus
+GDOT,"Green Dot Corporation Class A Common Stock, $0.001 par value",2012-07-27,23.32,9.06,0.3885,0.3846,looks like a missed split/bonus
+MTG,MGIC Investment Corporation Common Stock,2012-08-02,2.45,0.88,0.3592,0.3571,looks like a missed split/bonus
+OGG,Osisko Gold Group Inc. Common Shares,2012-11-28,0.08,0.04,0.5,0.5,looks like a missed split/bonus
+PARR,"Par Pacific Holdings, Inc.  Common Stock",2012-09-06,0.06,0.13,2.1667,2.0,"no clean ratio (crash, spin-off or bad data?)"
+PARR,"Par Pacific Holdings, Inc.  Common Stock",2012-09-13,0.26,0.48,1.8462,2.0,"no clean ratio (crash, spin-off or bad data?)"
+PARR,"Par Pacific Holdings, Inc.  Common Stock",2012-09-14,0.48,1.0,2.0833,2.0,looks like a missed split/bonus
+SGI,Somnigroup International Inc. Common Stock,2012-06-06,43.67,22.39,0.5127,0.5,looks like a missed split/bonus
+SKE,Skeena Resources Limited Common Shares,2012-07-24,0.017,0.05,2.9412,3.0,looks like a missed split/bonus
+ARIS,Aris Mining Corporation Common Shares,2013-06-19,3.96,2.13,0.5379,0.5385,looks like a missed split/bonus
+GRBK,"Green Brick Partners, Inc. Common Stock",2013-11-06,2.66,1.45,0.5451,0.5455,looks like a missed split/bonus
+LAR,Lithium Argentina AG Common Shares,2013-09-13,0.15,0.44,2.9333,3.0,looks like a missed split/bonus
+LAR,Lithium Argentina AG Common Shares,2013-09-16,0.44,0.2,0.4545,0.4545,looks like a missed split/bonus
+LEU,Centrus Energy Corp. Class A Common Stock,2013-07-22,6.05,11.98,1.9802,2.0,looks like a missed split/bonus
+LEU,Centrus Energy Corp. Class A Common Stock,2013-12-16,8.81,3.51,0.3984,0.4,looks like a missed split/bonus
+NVGS,Navigator Holdings Ltd. Ordinary Shares (Marshall Islands),2013-11-21,60.0,20.0,0.3333,0.3333,looks like a missed split/bonus
+OGG,Osisko Gold Group Inc. Common Shares,2013-11-12,0.024,0.01,0.4167,0.4167,looks like a missed split/bonus
+OGG,Osisko Gold Group Inc. Common Shares,2013-12-30,0.006,0.013,2.1667,2.0,"no clean ratio (crash, spin-off or bad data?)"
+QXO,"QXO, Inc. Common Stock",2013-01-15,3.3,1.5,0.4545,0.4545,looks like a missed split/bonus
+QXO,"QXO, Inc. Common Stock",2013-02-11,4.5,2.1,0.4667,0.4667,looks like a missed split/bonus
+QXO,"QXO, Inc. Common Stock",2013-02-12,2.1,4.5,2.1429,2.0,"no clean ratio (crash, spin-off or bad data?)"
+QXO,"QXO, Inc. Common Stock",2013-12-31,3.9,2.1,0.5385,0.5385,looks like a missed split/bonus
+VATE,INNOVATE Corp. Common Stock,2013-08-28,12.39,3.98,0.3212,0.3333,looks like a missed split/bonus
+CVEO,Civeo Corporation (Canada) Common Shares,2014-09-29,25.47,12.84,0.5041,0.5,looks like a missed split/bonus
+CVEO,Civeo Corporation (Canada) Common Shares,2014-12-30,8.27,3.92,0.474,0.4737,looks like a missed split/bonus
+GRBK,"Green Brick Partners, Inc. Common Stock",2014-02-27,1.89,3.46,1.8307,2.0,"no clean ratio (crash, spin-off or bad data?)"
+GRBK,"Green Brick Partners, Inc. Common Stock",2014-03-31,3.14,7.3,2.3248,2.0,"no clean ratio (crash, spin-off or bad data?)"
+LEU,Centrus Energy Corp. Class A Common Stock,2014-07-01,3.03,7.39,2.4389,3.0,"no clean ratio (crash, spin-off or bad data?)"
+OGG,Osisko Gold Group Inc. Common Shares,2014-12-05,0.017,0.003,0.1765,0.1818,looks like a missed split/bonus
+QXO,"QXO, Inc. Common Stock",2014-01-02,2.1,3.9,1.8571,2.0,"no clean ratio (crash, spin-off or bad data?)"
+QXO,"QXO, Inc. Common Stock",2014-10-23,4.5,2.4,0.5333,0.5333,looks like a missed split/bonus
+SKE,Skeena Resources Limited Common Shares,2014-02-14,0.082,0.034,0.4146,0.4167,looks like a missed split/bonus
+SKE,Skeena Resources Limited Common Shares,2014-04-09,0.034,0.076,2.2353,2.0,"no clean ratio (crash, spin-off or bad data?)"
+AMPY,Amplify Energy Corp. Common Stock,2015-08-28,2.08,4.19,2.0144,2.0,looks like a missed split/bonus
+AROC,"Archrock, Inc. Common Stock",2015-11-04,23.06,12.6,0.5464,0.5455,looks like a missed split/bonus
+MX,Magnachip Semiconductor Corporation Common Stock,2015-02-13,15.02,7.52,0.5007,0.5,looks like a missed split/bonus
+OGG,Osisko Gold Group Inc. Common Shares,2015-06-09,0.003,0.001,0.3333,0.3333,looks like a missed split/bonus
+TK,Teekay Corporation Ltd. Common Stock,2015-12-17,17.49,7.27,0.4157,0.4167,looks like a missed split/bonus
+AMPY,Amplify Energy Corp. Common Stock,2016-02-04,0.71,0.25,0.3521,0.3571,looks like a missed split/bonus
+AMPY,Amplify Energy Corp. Common Stock,2016-05-02,0.29,0.14,0.4828,0.4737,looks like a missed split/bonus
+AMPY,Amplify Energy Corp. Common Stock,2016-10-11,0.05,0.1,2.0,2.0,looks like a missed split/bonus
+AMPY,Amplify Energy Corp. Common Stock,2016-10-24,0.14,22.65,161.7857,10.0,"no clean ratio (crash, spin-off or bad data?)"
+BHC,Bausch Health Companies Inc. Common Stock,2016-03-15,69.04,33.51,0.4854,0.4737,looks like a missed split/bonus
+CYH,"Community Health Systems, Inc. Common Stock",2016-10-27,10.03,5.05,0.5035,0.5,looks like a missed split/bonus
+IPI,"Intrepid Potash, Inc Common Stock",2016-02-29,2.22,0.99,0.4459,0.4444,looks like a missed split/bonus
+LEU,Centrus Energy Corp. Class A Common Stock,2016-03-08,1.52,3.27,2.1513,2.0,"no clean ratio (crash, spin-off or bad data?)"
+OGG,Osisko Gold Group Inc. Common Shares,2016-04-07,0.001,0.008,8.0,10.0,"no clean ratio (crash, spin-off or bad data?)"
+OGG,Osisko Gold Group Inc. Common Shares,2016-05-20,0.009,0.03,3.3333,3.0,"no clean ratio (crash, spin-off or bad data?)"
+OGG,Osisko Gold Group Inc. Common Shares,2016-08-03,0.03,0.061,2.0333,2.0,looks like a missed split/bonus
+SOR,"Source Capital, Inc. Cmn Shs of BI",2016-03-16,67.48,35.68,0.5287,0.5294,looks like a missed split/bonus
+BW,"Babcock & Wilcox Enterprises, Inc. Common Stock",2017-08-10,9.75,2.7,0.2769,0.2727,looks like a missed split/bonus
+JILL,"J. Jill, Inc. Common Stock",2017-10-12,9.93,4.86,0.4894,0.5,looks like a missed split/bonus
+OGG,Osisko Gold Group Inc. Common Shares,2017-07-18,0.025,0.001,0.04,0.05,"no clean ratio (crash, spin-off or bad data?)"
+OGG,Osisko Gold Group Inc. Common Shares,2017-07-27,0.001,0.002,2.0,2.0,looks like a missed split/bonus
+ONIT,Onity Group Inc. Common Stock,2017-04-20,5.4,2.49,0.4611,0.4615,looks like a missed split/bonus
+SKE,Skeena Resources Limited Common Shares,2017-10-25,0.045,0.426,9.4667,10.0,looks like a missed split/bonus
+KODK,Eastman Kodak Company Common New,2018-01-09,3.1,6.8,2.1935,2.0,"no clean ratio (crash, spin-off or bad data?)"
+OGG,Osisko Gold Group Inc. Common Shares,2018-07-09,0.002,0.005,2.5,3.0,"no clean ratio (crash, spin-off or bad data?)"
+OGG,Osisko Gold Group Inc. Common Shares,2018-11-28,0.005,0.186,37.2,10.0,"no clean ratio (crash, spin-off or bad data?)"
+OGG,Osisko Gold Group Inc. Common Shares,2018-12-26,0.186,0.05,0.2688,0.2727,looks like a missed split/bonus
+ARLO,"Arlo Technologies, Inc. Common Stock",2019-02-06,7.57,3.86,0.5099,0.5,looks like a missed split/bonus
+BBAR,Banco BBVA Argentina S.A. ADS,2019-08-12,12.05,5.32,0.4415,0.4444,looks like a missed split/bonus
+BMA,Banco Macro S.A.  ADR (representing Ten Class B Common Shares),2019-08-12,76.48,36.2,0.4733,0.4737,looks like a missed split/bonus
+BWLP,BW LPG Limited Common Shares,2019-12-20,4.55,8.53,1.8747,2.0,"no clean ratio (crash, spin-off or bad data?)"
+CEPU,Central Puerto S.A. American Depositary Shares (each represents ten Common Shares),2019-08-12,8.96,3.95,0.4408,0.4375,looks like a missed split/bonus
+EDN,Empresa Distribuidora Y Comercializadora Norte S.A. (Edenor) American Depositary Shares,2019-08-12,18.7,7.67,0.4102,0.4118,looks like a missed split/bonus
+FTK,"Flotek Industries, Inc. Common Stock",2019-01-11,1.41,2.76,1.9574,2.0,looks like a missed split/bonus
+JILL,"J. Jill, Inc. Common Stock",2019-05-30,3.61,1.68,0.4654,0.4667,looks like a missed split/bonus
+LOMA,Loma Negra Compania Industrial Argentina Sociedad Anonima ADS,2019-08-12,12.88,5.5,0.427,0.4286,looks like a missed split/bonus
+OGG,Osisko Gold Group Inc. Common Shares,2019-10-16,0.045,0.005,0.1111,0.1111,looks like a missed split/bonus
+OGG,Osisko Gold Group Inc. Common Shares,2019-12-09,0.005,0.138,27.6,10.0,"no clean ratio (crash, spin-off or bad data?)"
+PAM,Pampa Energia S.A.,2019-08-12,35.12,16.22,0.4618,0.4615,looks like a missed split/bonus
+PCG,Pacific Gas & Electric Co. Common Stock,2019-01-14,17.59,8.38,0.4764,0.4737,looks like a missed split/bonus
+QUAD,"Quad Graphics, Inc Class A Common Stock",2019-10-30,11.27,4.85,0.4303,0.4286,looks like a missed split/bonus
+SOS,SOS Limited Class A Ordinary Shares,2019-12-26,1.83,3.9,2.1311,2.0,"no clean ratio (crash, spin-off or bad data?)"
+SUPV,Grupo Supervielle S.A. American Depositary Shares each Representing five Class B shares,2019-08-12,7.66,3.17,0.4138,0.4118,looks like a missed split/bonus
+TGS,Transportadora de Gas del Sur SA TGS Common Stock,2019-08-12,15.78,8.2,0.5196,0.5263,looks like a missed split/bonus
 ACH,"Accendra Health, Inc. Common Stock",2020-07-21,7.94,14.4,1.8136,2.0,"no clean ratio (crash, spin-off or bad data?)"
 ACR,ACRES Commercial Realty Corp. Common Stock,2020-03-18,4.71,2.5,0.5308,0.5294,looks like a missed split/bonus
+AHT,Ashford Hospitality Trust Inc Common Stock,2020-03-19,0.49,1.25,2.551,3.0,"no clean ratio (crash, spin-off or bad data?)"
+AHT,Ashford Hospitality Trust Inc Common Stock,2020-11-09,1.44,4.73,3.2847,3.0,"no clean ratio (crash, spin-off or bad data?)"
+BHR,Braemar Hotels & Resorts Inc. Common Stock,2020-03-18,2.37,1.15,0.4852,0.4737,looks like a missed split/bonus
+BORR,Borr Drilling Limited Common Shares,2020-04-07,0.79,1.6,2.0253,2.0,looks like a missed split/bonus
+BORR,Borr Drilling Limited Common Shares,2020-06-08,1.16,2.63,2.2672,2.0,"no clean ratio (crash, spin-off or bad data?)"
+CCM,Concord Medical Services Holdings Limited American Depositary Shares (Each represents thirty (30) Class A ordinary shares),2020-12-15,1.9,5.31,2.7947,3.0,"no clean ratio (crash, spin-off or bad data?)"
+CVE,Cenovus Energy Inc Common Stock,2020-03-09,5.89,2.8,0.4754,0.4737,looks like a missed split/bonus
+DBI,Designer Brands Inc. Class A Common Stock,2020-03-19,3.17,5.87,1.8517,2.0,"no clean ratio (crash, spin-off or bad data?)"
+ECC,Eagle Point Credit Company Common Share of Beneficial Interest,2020-03-18,10.09,5.3,0.5253,0.5263,looks like a missed split/bonus
+EIC,Eagle Point Income Company Common Shares of Beneficial Interest,2020-03-18,13.6,6.332,0.4656,0.4667,looks like a missed split/bonus
+EMO,ClearBridge Energy Midstream Opportunity Fund Inc. Common Stock,2020-03-18,1.47,0.72,0.4898,0.5,looks like a missed split/bonus
+FENG,"Phoenix New Media Limited American Depositary Shares, each representing 48 Class A ordinary shares.",2020-12-23,2.46,1.28,0.5203,0.5263,looks like a missed split/bonus
+FET,"Forum Energy Technologies, Inc. Common Stock",2020-03-09,0.55,0.27,0.4909,0.5,looks like a missed split/bonus
+FET,"Forum Energy Technologies, Inc. Common Stock",2020-06-08,0.52,0.95,1.8269,2.0,"no clean ratio (crash, spin-off or bad data?)"
+GPMT,Granite Point Mortgage Trust Inc. Common Stock,2020-03-26,2.25,6.81,3.0267,3.0,looks like a missed split/bonus
+IVR,INVESCO MORTGAGE CAPITAL INC Common Stock,2020-03-24,5.33,2.52,0.4728,0.4737,looks like a missed split/bonus
+IVT,InvenTrust Properties Corp. Common Stock,2020-04-15,2.25,1.15,0.5111,0.5,looks like a missed split/bonus
+KNTK,Kinetik Holdings Inc. Class A Common Stock,2020-11-05,10.03,30.54,3.0449,3.0,looks like a missed split/bonus
+KODK,Eastman Kodak Company Common New,2020-07-28,2.62,7.94,3.0305,3.0,looks like a missed split/bonus
+KODK,Eastman Kodak Company Common New,2020-07-29,7.94,33.2,4.1814,4.0,looks like a missed split/bonus
+KOS,Kosmos Energy Ltd. Common Shares (DE),2020-03-09,1.95,0.8,0.4103,0.4118,looks like a missed split/bonus
+KYN,"Kayne Anderson Energy Infrastructure Fund, Inc.",2020-03-18,3.7,2.0,0.5405,0.5385,looks like a missed split/bonus
+LADR,Ladder Capital Corp Class A Common Stock,2020-03-26,3.71,7.14,1.9245,2.0,looks like a missed split/bonus
+MFA,"MFA Financial, Inc.",2020-03-24,2.7,0.36,0.1333,0.125,"no clean ratio (crash, spin-off or bad data?)"
+MFA,"MFA Financial, Inc.",2020-03-25,0.36,1.14,3.1667,3.0,looks like a missed split/bonus
+MITT,"TPG Mortgage Investment Trust, Inc. Common Stock",2020-03-18,6.78,3.27,0.4823,0.4737,looks like a missed split/bonus
+MITT,"TPG Mortgage Investment Trust, Inc. Common Stock",2020-06-08,3.6,7.57,2.1028,2.0,looks like a missed split/bonus
+MOGU,MOGU Inc. American Depositary Shares (each  representing 25 Class A Ordinary Shares),2020-07-07,2.89,5.92,2.0484,2.0,looks like a missed split/bonus
+MTDR,Matador Resources Company Common Stock,2020-03-09,6.55,2.35,0.3588,0.3571,looks like a missed split/bonus
+NBR,Nabors Industries Ltd.,2020-03-09,0.96,0.51,0.5312,0.5294,looks like a missed split/bonus
+OGG,Osisko Gold Group Inc. Common Shares,2020-08-13,0.18,0.006,0.0333,0.05,"no clean ratio (crash, spin-off or bad data?)"
+OGG,Osisko Gold Group Inc. Common Shares,2020-12-03,0.006,5.82,970.0,10.0,"no clean ratio (crash, spin-off or bad data?)"
+OIS,"Oil States International, Inc. Common Stock",2020-03-09,5.93,3.12,0.5261,0.5263,looks like a missed split/bonus
+ORC,"Orchid Island Capital, Inc. Common Stock",2020-03-18,3.74,1.88,0.5027,0.5,looks like a missed split/bonus
+OVV,Ovintiv Inc. (DE),2020-03-09,7.94,2.22,0.2796,0.2857,looks like a missed split/bonus
+OXY,Occidental Petroleum Corporation Common Stock,2020-03-09,26.86,12.51,0.4657,0.4667,looks like a missed split/bonus
+PDS,Precision Drilling Corporation Common Stock,2020-03-09,1.04,0.56,0.5385,0.5385,looks like a missed split/bonus
+PMT,PennyMac Mortgage Investment Trust Common Shares of Beneficial Interest,2020-03-25,5.72,10.33,1.8059,2.0,"no clean ratio (crash, spin-off or bad data?)"
+PR,Permian Resources Corporation Class A Common Stock,2020-03-09,1.52,0.56,0.3684,0.3636,looks like a missed split/bonus
+QXO,"QXO, Inc. Common Stock",2020-08-04,2.72,5.4,1.9853,2.0,looks like a missed split/bonus
+RCUS,"Arcus Biosciences, Inc. Common Stock",2020-04-16,15.58,29.5,1.8935,2.0,looks like a missed split/bonus
+RPT,Rithm Property Trust Inc. Common stock,2020-03-18,9.14,4.11,0.4497,0.4545,looks like a missed split/bonus
+SM,SM Energy Company Common Stock,2020-03-09,3.82,1.48,0.3874,0.3846,looks like a missed split/bonus
+SMC,Summit Midstream Corporation Common Stock,2020-03-13,0.7,1.34,1.9143,2.0,looks like a missed split/bonus
+SNDA,"Sonida Senior Living, Inc. Common Stock",2020-06-08,0.7,1.48,2.1143,2.0,looks like a missed split/bonus
+SPRU,Spruce Power Holding Corporation Class A Common Stock,2020-12-23,17.52,32.59,1.8602,2.0,"no clean ratio (crash, spin-off or bad data?)"
+SSL,Sasol Ltd. American Depositary Shares,2020-03-09,9.84,5.31,0.5396,0.5385,looks like a missed split/bonus
+TDAY,"USA TODAY Co., Inc. Common Stock",2020-03-18,2.35,1.25,0.5319,0.5333,looks like a missed split/bonus
+TDAY,"USA TODAY Co., Inc. Common Stock",2020-06-05,1.39,2.81,2.0216,2.0,looks like a missed split/bonus
+TPC,Tutor Perini Corporation Common Stock,2020-03-17,5.33,2.91,0.546,0.5455,looks like a missed split/bonus
+TPVG,TriplePoint Venture Growth BDC Corp. Common Stock,2020-03-18,5.32,2.9,0.5451,0.5455,looks like a missed split/bonus
+TPVG,TriplePoint Venture Growth BDC Corp. Common Stock,2020-03-19,2.9,7.96,2.7448,3.0,"no clean ratio (crash, spin-off or bad data?)"
+TRGP,"Targa Resources, Inc. Common Stock",2020-03-09,27.86,13.12,0.4709,0.4706,looks like a missed split/bonus
+TTI,"Tetra Technologies, Inc. Common Stock",2020-03-09,1.01,0.55,0.5446,0.5455,looks like a missed split/bonus
+TYG,Tortoise Energy Infrastructure Corporation Common Stock,2020-03-18,3.29,1.34,0.4073,0.4118,looks like a missed split/bonus
+TYG,Tortoise Energy Infrastructure Corporation Common Stock,2020-03-19,1.34,2.76,2.0597,2.0,looks like a missed split/bonus
+UAMY,United States Antimony Corporation Common Stock,2020-10-07,0.32,0.58,1.8125,2.0,"no clean ratio (crash, spin-off or bad data?)"
+VEL,"Velocity Financial, Inc. Common Stock",2020-03-16,9.01,4.54,0.5039,0.5,looks like a missed split/bonus
+WHG,Westwood Holdings Group Inc Common Stock,2020-03-18,20.69,11.05,0.5341,0.5333,looks like a missed split/bonus
+AMC,"AMC Entertainment Holdings, Inc. Class A Common Stock",2021-01-27,4.96,19.9,4.0121,4.0,looks like a missed split/bonus
+AMC,"AMC Entertainment Holdings, Inc. Class A Common Stock",2021-01-28,19.9,8.63,0.4337,0.4375,looks like a missed split/bonus
+AMC,"AMC Entertainment Holdings, Inc. Class A Common Stock",2021-06-02,32.04,62.55,1.9522,2.0,looks like a missed split/bonus
+ANVS,"Annovis Bio, Inc. Common Stock",2021-05-21,26.4,60.0,2.2727,2.0,"no clean ratio (crash, spin-off or bad data?)"
+ANVS,"Annovis Bio, Inc. Common Stock",2021-07-29,109.44,43.5,0.3975,0.4,looks like a missed split/bonus
+BKKT,"Bakkt, Inc. Class A Common Stock",2021-10-25,9.15,30.6,3.3443,3.0,"no clean ratio (crash, spin-off or bad data?)"
+CHGG,"Chegg, Inc. Common Stock",2021-11-02,62.76,32.12,0.5118,0.5,looks like a missed split/bonus
+DDD,3D Systems Corporation Common Stock,2021-01-07,11.24,22.96,2.0427,2.0,looks like a missed split/bonus
+EDU,"New Oriental Education & Technology Group, Inc. Sponsored ADR representing 10 Ordinary Share (Cayman Islands)",2021-07-23,0.64,0.293,0.4578,0.4545,looks like a missed split/bonus
+FINV,FinVolution Group American Depositary Shares,2021-03-11,5.06,9.77,1.9308,2.0,looks like a missed split/bonus
+GME,GameStop Corporation Common Stock,2021-01-26,76.79,147.98,1.9271,2.0,looks like a missed split/bonus
+GME,GameStop Corporation Common Stock,2021-01-27,147.98,347.51,2.3484,2.0,"no clean ratio (crash, spin-off or bad data?)"
+GME,GameStop Corporation Common Stock,2021-02-02,225.0,90.0,0.4,0.4,looks like a missed split/bonus
+GME,GameStop Corporation Common Stock,2021-02-24,44.97,91.71,2.0394,2.0,looks like a missed split/bonus
+GOTU,Gaotu Techedu Inc. American Depositary Shares,2021-07-23,9.58,3.52,0.3674,0.3636,looks like a missed split/bonus
+IVT,InvenTrust Properties Corp. Common Stock,2021-09-24,1.96,19.75,10.0765,10.0,looks like a missed split/bonus
+IVT,InvenTrust Properties Corp. Common Stock,2021-10-06,13.0,5.03,0.3869,0.3846,looks like a missed split/bonus
+IVT,InvenTrust Properties Corp. Common Stock,2021-10-07,5.03,17.02,3.3837,3.0,"no clean ratio (crash, spin-off or bad data?)"
+PBI,Pitney Bowes Inc. Common Stock,2021-01-26,7.53,13.63,1.8101,2.0,"no clean ratio (crash, spin-off or bad data?)"
+RFL,"Rafael Holdings, Inc. Class B Common Stock",2021-10-28,30.17,8.09,0.2681,0.2727,looks like a missed split/bonus
+SLQT,"SelectQuote, Inc. Common Stock",2021-08-26,14.35,7.89,0.5498,0.5455,looks like a missed split/bonus
+TAL,TAL Education Group American Depositary Shares,2021-07-23,20.52,6.0,0.2924,0.2857,looks like a missed split/bonus
+TISI,"Team, Inc. Common Stock",2021-11-12,2.69,1.46,0.5428,0.5455,looks like a missed split/bonus
+UAMY,United States Antimony Corporation Common Stock,2021-02-10,0.98,1.78,1.8163,2.0,"no clean ratio (crash, spin-off or bad data?)"
+AMPX,"Amprius Technologies, Inc. Common Stock",2022-09-20,5.9,11.0,1.8644,2.0,"no clean ratio (crash, spin-off or bad data?)"
+AMTD,"AMTD IDEA Group American Depositary Shares, each representing three hundred sixty (360) Class A Ordinary Shares",2022-07-22,0.018,0.0367,2.0389,2.0,looks like a missed split/bonus
+AMTD,"AMTD IDEA Group American Depositary Shares, each representing three hundred sixty (360) Class A Ordinary Shares",2022-08-02,0.0347,0.1167,3.3631,3.0,"no clean ratio (crash, spin-off or bad data?)"
+BKSY,BlackSky Technology Inc. Class A Common Stock,2022-05-25,1.18,2.33,1.9746,2.0,looks like a missed split/bonus
+EPAM,"EPAM Systems, Inc. Common Stock",2022-02-28,382.43,207.75,0.5432,0.5455,looks like a missed split/bonus
+GRND,Grindr Inc. Common Stock,2022-11-18,11.63,36.5,3.1384,3.0,looks like a missed split/bonus
+GRND,Grindr Inc. Common Stock,2022-11-21,36.5,19.71,0.54,0.5385,looks like a missed split/bonus
+GROV,"Grove Collaborative Holdings, Inc. Class A Common Stock",2022-07-07,4.0,7.37,1.8425,2.0,"no clean ratio (crash, spin-off or bad data?)"
+HKD,AMTD Digital Inc. American Depositary Shares (every five of which represent two Class A Ordinary Shares),2022-07-22,20.32,68.0,3.3465,3.0,"no clean ratio (crash, spin-off or bad data?)"
+HKD,AMTD Digital Inc. American Depositary Shares (every five of which represent two Class A Ordinary Shares),2022-07-28,76.69,180.0,2.3471,2.0,"no clean ratio (crash, spin-off or bad data?)"
+HKD,AMTD Digital Inc. American Depositary Shares (every five of which represent two Class A Ordinary Shares),2022-07-29,180.0,400.25,2.2236,2.0,"no clean ratio (crash, spin-off or bad data?)"
+HKD,AMTD Digital Inc. American Depositary Shares (every five of which represent two Class A Ordinary Shares),2022-08-01,400.25,742.0,1.8538,2.0,"no clean ratio (crash, spin-off or bad data?)"
+HKD,AMTD Digital Inc. American Depositary Shares (every five of which represent two Class A Ordinary Shares),2022-08-02,742.0,1679.0,2.2628,2.0,"no clean ratio (crash, spin-off or bad data?)"
+HKD,AMTD Digital Inc. American Depositary Shares (every five of which represent two Class A Ordinary Shares),2022-08-09,405.0,212.0,0.5235,0.5263,looks like a missed split/bonus
+HKD,AMTD Digital Inc. American Depositary Shares (every five of which represent two Class A Ordinary Shares),2022-09-14,46.0,189.42,4.1178,4.0,looks like a missed split/bonus
+LAW,"CS Disco, Inc. Common Stock",2022-08-12,28.96,13.43,0.4637,0.4615,looks like a missed split/bonus
+SLQT,"SelectQuote, Inc. Common Stock",2022-02-08,6.53,3.44,0.5268,0.5263,looks like a missed split/bonus
+SRG,Seritage Growth Properties Class A Common Stock,2022-07-08,6.08,10.96,1.8026,2.0,"no clean ratio (crash, spin-off or bad data?)"
+UIS,Unisys Corporation New Common Stock,2022-11-08,8.96,4.63,0.5167,0.5263,looks like a missed split/bonus
 AD,"Array Digital Infrastructure, Inc. Common Shares",2023-08-04,17.5,33.76,1.9291,2.0,looks like a missed split/bonus
+BBAI,"BigBear.ai, Inc. Common Stock",2023-01-12,0.846,3.05,3.6052,4.0,"no clean ratio (crash, spin-off or bad data?)"
+BKKT,"Bakkt, Inc. Class A Common Stock",2023-01-12,1.43,2.78,1.9441,2.0,looks like a missed split/bonus
+BW,"Babcock & Wilcox Enterprises, Inc. Common Stock",2023-11-10,2.31,1.05,0.4545,0.4545,looks like a missed split/bonus
+CHGG,"Chegg, Inc. Common Stock",2023-05-02,17.6,9.08,0.5159,0.5263,looks like a missed split/bonus
+DEC,Diversified Energy Company Common Stock,2023-12-05,0.852,17.1,20.0704,10.0,"no clean ratio (crash, spin-off or bad data?)"
+HKD,AMTD Digital Inc. American Depositary Shares (every five of which represent two Class A Ordinary Shares),2023-01-05,10.0,29.95,2.995,3.0,looks like a missed split/bonus
+LOCL,Local Bounti Corporation Common Stock,2023-03-17,0.351,0.74,2.1083,2.0,looks like a missed split/bonus
+MBI,MBIA Inc. Common Stock,2023-12-08,7.38,13.42,1.8184,2.0,"no clean ratio (crash, spin-off or bad data?)"
+MBI,MBIA Inc. Common Stock,2023-12-26,14.19,6.67,0.47,0.4706,looks like a missed split/bonus
+NYC,American Strategic Investment Co. Class A Common Stock,2023-01-12,1.71,15.66,9.1579,10.0,"no clean ratio (crash, spin-off or bad data?)"
+PSQH,"PSQ Holdings, Inc. Class A Common Stock",2023-07-20,13.89,29.8,2.1454,2.0,"no clean ratio (crash, spin-off or bad data?)"
+QXO,"QXO, Inc. Common Stock",2023-12-04,3.67,12.49,3.4033,3.0,"no clean ratio (crash, spin-off or bad data?)"
+SOS,SOS Limited Class A Ordinary Shares,2023-08-21,4.49,8.95,1.9933,2.0,looks like a missed split/bonus
+TDS,"Telephone and Data Systems, Inc. Common Shares",2023-08-04,7.9,14.84,1.8785,2.0,"no clean ratio (crash, spin-off or bad data?)"
+UP,Wheels Up Experience Inc. Class A Common Stock,2023-06-22,3.13,1.24,0.3962,0.4,looks like a missed split/bonus
+WAL,Western Alliance Bancorporation Common Stock (DE),2023-03-13,49.34,26.12,0.5294,0.5294,looks like a missed split/bonus
+ANRO,"Alto Neuroscience, Inc. Common Stock",2024-10-23,14.53,4.36,0.3001,0.3,looks like a missed split/bonus
+ANVS,"Annovis Bio, Inc. Common Stock",2024-04-29,18.01,7.28,0.4042,0.4,looks like a missed split/bonus
+BKKT,"Bakkt, Inc. Class A Common Stock",2024-11-18,11.32,29.71,2.6246,3.0,"no clean ratio (crash, spin-off or bad data?)"
+BNED,"Barnes & Noble Education, Inc Common Stock",2024-01-10,2.24,1.1,0.4911,0.5,looks like a missed split/bonus
+BNED,"Barnes & Noble Education, Inc Common Stock",2024-04-16,0.7,0.25,0.3571,0.3571,looks like a missed split/bonus
+BNED,"Barnes & Noble Education, Inc Common Stock",2024-05-17,0.178,0.45,2.5281,3.0,"no clean ratio (crash, spin-off or bad data?)"
+BNED,"Barnes & Noble Education, Inc Common Stock",2024-05-22,0.54,1.13,2.0926,2.0,looks like a missed split/bonus
+BNED,"Barnes & Noble Education, Inc Common Stock",2024-06-07,0.325,0.173,0.5323,0.5333,looks like a missed split/bonus
+CCM,Concord Medical Services Holdings Limited American Depositary Shares (Each represents thirty (30) Class A ordinary shares),2024-06-04,0.79,2.1,2.6582,3.0,"no clean ratio (crash, spin-off or bad data?)"
+CCM,Concord Medical Services Holdings Limited American Depositary Shares (Each represents thirty (30) Class A ordinary shares),2024-06-05,2.1,1.13,0.5381,0.5385,looks like a missed split/bonus
+CCM,Concord Medical Services Holdings Limited American Depositary Shares (Each represents thirty (30) Class A ordinary shares),2024-06-24,0.56,1.17,2.0893,2.0,looks like a missed split/bonus
+CPRI,Capri Holdings Limited Ordinary Shares,2024-10-25,41.6,21.26,0.5111,0.5,looks like a missed split/bonus
+CTEV,Claritev Corporation Class A Common Stock,2024-12-24,6.28,12.24,1.949,2.0,looks like a missed split/bonus
+DXYZ,Destiny Tech100 Inc. Common Stock,2024-03-27,9.0,17.6,1.9556,2.0,looks like a missed split/bonus
+EVC,Entravision Communications Corporation Common Stock,2024-03-06,3.57,1.79,0.5014,0.5,looks like a missed split/bonus
+EVH,"Evolent Health, Inc Class A Common Stock",2024-11-08,24.57,13.36,0.5438,0.5455,looks like a missed split/bonus
+GCTS,"GCT Semiconductor Holding, Inc. Common Stock",2024-03-27,6.58,44.0,6.6869,10.0,"no clean ratio (crash, spin-off or bad data?)"
+GCTS,"GCT Semiconductor Holding, Inc. Common Stock",2024-04-01,33.06,18.09,0.5472,0.5455,looks like a missed split/bonus
+GCTS,"GCT Semiconductor Holding, Inc. Common Stock",2024-04-03,15.5,6.86,0.4426,0.4444,looks like a missed split/bonus
+GL,Globe Life Inc. Common Stock,2024-04-11,104.93,49.17,0.4686,0.4667,looks like a missed split/bonus
+JMIA,"Jumia Technologies AG American Depositary Shares, each representing two Ordinary Shares",2024-08-06,10.59,4.89,0.4618,0.4615,looks like a missed split/bonus
+LU,Lufax Holding Ltd American Depositary Shares (each representing twenty (20) Ordinary Shares),2024-06-04,4.38,2.03,0.4635,0.4615,looks like a missed split/bonus
+MAGN,Magnera Corporation Common Stock,2024-02-07,1.28,2.64,2.0625,2.0,looks like a missed split/bonus
+NRDY,Nerdy Inc. Class A Common Stock,2024-08-09,1.59,0.826,0.5195,0.5263,looks like a missed split/bonus
+OKLO,Oklo Inc. Class A common stock,2024-05-10,18.23,8.45,0.4635,0.4615,looks like a missed split/bonus
+PSQH,"PSQ Holdings, Inc. Class A Common Stock",2024-12-03,2.06,7.63,3.7039,4.0,"no clean ratio (crash, spin-off or bad data?)"
+QXO,"QXO, Inc. Common Stock",2024-07-30,60.5,12.05,0.1992,0.2,looks like a missed split/bonus
+SES,SES AI Corporation Class A Common Stock,2024-12-26,0.71,1.42,2.0,2.0,looks like a missed split/bonus
+SQNS,Sequans Communications S.A. American Depositary Shares (each representing one hundred (100) Ordinary Shares),2024-02-23,2.56,0.9,0.3516,0.3571,looks like a missed split/bonus
+SQNS,Sequans Communications S.A. American Depositary Shares (each representing one hundred (100) Ordinary Shares),2024-08-23,0.54,1.15,2.1296,2.0,"no clean ratio (crash, spin-off or bad data?)"
+ZKH,"ZKH Group Limited American Depositary Shares, each representing thirty-five (35) Class A Ordinary Shares",2024-06-12,13.52,5.74,0.4246,0.4286,looks like a missed split/bonus
+AGL,"agilon health, inc. Common Stock",2025-08-05,1.815,0.88,0.4848,0.4737,looks like a missed split/bonus
+ANRO,"Alto Neuroscience, Inc. Common Stock",2025-10-20,6.08,11.0,1.8092,2.0,"no clean ratio (crash, spin-off or bad data?)"
+BMNR,"BitMine Immersion Technologies, Inc. Common Stock",2025-06-30,4.265,33.9,7.9484,10.0,"no clean ratio (crash, spin-off or bad data?)"
+BMNR,"BitMine Immersion Technologies, Inc. Common Stock",2025-07-03,58.5,135.0,2.3077,2.0,"no clean ratio (crash, spin-off or bad data?)"
+CODI,D/B/A Compass Diversified Holdings Shares of Beneficial Interest,2025-05-08,17.25,6.55,0.3797,0.375,looks like a missed split/bonus
+FMC,FMC Corporation Common Stock,2025-10-30,29.04,15.53,0.5348,0.5333,looks like a missed split/bonus
+FUBO,FuboTV Inc. Class A Common Stock,2025-01-06,1.44,5.06,3.5139,4.0,"no clean ratio (crash, spin-off or bad data?)"
+IBTA,"Ibotta, Inc. Class A Common Stock",2025-02-27,63.09,34.01,0.5391,0.5385,looks like a missed split/bonus
+LAC,Lithium Americas Corp. Common Shares,2025-09-24,3.07,6.01,1.9577,2.0,looks like a missed split/bonus
+LRN,"Stride, Inc. Common Stock",2025-10-29,153.53,70.05,0.4563,0.4545,looks like a missed split/bonus
+LVWR,"LiveWire Group, Inc. Common Stock",2025-05-27,1.01,2.56,2.5347,3.0,"no clean ratio (crash, spin-off or bad data?)"
+MOGU,MOGU Inc. American Depositary Shares (each  representing 25 Class A Ordinary Shares),2025-09-11,2.5,4.61,1.844,2.0,"no clean ratio (crash, spin-off or bad data?)"
+NMAX,"Newsmax, Inc. Class B Common Stock",2025-04-01,83.51,233.0,2.7901,3.0,"no clean ratio (crash, spin-off or bad data?)"
+NMAX,"Newsmax, Inc. Class B Common Stock",2025-04-02,233.0,52.52,0.2254,0.2222,looks like a missed split/bonus
+RHLD,Resolute Holdings Management Common Stock,2025-11-03,73.66,144.97,1.9681,2.0,looks like a missed split/bonus
+SOS,SOS Limited Class A Ordinary Shares,2025-07-30,6.0,2.73,0.455,0.4545,looks like a missed split/bonus
+SPIR,"Spire Global, Inc. Class A Common Stock",2025-02-12,19.85,10.12,0.5098,0.5,looks like a missed split/bonus
+SQNS,Sequans Communications S.A. American Depositary Shares (each representing one hundred (100) Ordinary Shares),2025-07-10,2.07,3.9,1.8841,2.0,looks like a missed split/bonus
+SRFM,Surf Air Mobility Inc. Common Stock,2025-06-24,1.91,3.6,1.8848,2.0,looks like a missed split/bonus
+TGE,The Generation Essentials Group Class A Ordinary Shares,2025-10-31,1.68,0.778,0.4631,0.4615,looks like a missed split/bonus
+TGE,The Generation Essentials Group Class A Ordinary Shares,2025-11-03,0.778,1.81,2.3265,2.0,"no clean ratio (crash, spin-off or bad data?)"
+VATE,INNOVATE Corp. Common Stock,2025-01-21,5.11,9.52,1.863,2.0,"no clean ratio (crash, spin-off or bad data?)"
+WBX,Wallbox N.V. Class A Ordinary Shares,2025-07-03,0.301,5.83,19.3688,10.0,"no clean ratio (crash, spin-off or bad data?)"
 ACH,"Accendra Health, Inc. Common Stock",2026-08-10,2.8,1.4,0.5,0.5,looks like a missed split/bonus
 ADCT,ADC Therapeutics SA Common Shares,2026-06-04,3.08,1.32,0.4286,0.4286,looks like a missed split/bonus
+AGL,"agilon health, inc. Common Stock",2026-05-07,27.85,60.66,2.1781,2.0,"no clean ratio (crash, spin-off or bad data?)"
+AMTD,"AMTD IDEA Group American Depositary Shares, each representing three hundred sixty (360) Class A Ordinary Shares",2026-01-02,0.0164,1.02,62.1951,10.0,"no clean ratio (crash, spin-off or bad data?)"
+BUR,Burford Capital Limited Ordinary Shares,2026-03-27,7.83,4.14,0.5287,0.5294,looks like a missed split/bonus
+EAF,GrafTech International Ltd. Common Stock,2026-02-06,15.69,8.44,0.5379,0.5385,looks like a missed split/bonus
+EFOR,"Everforth, Inc. Common Stock",2026-04-23,40.43,19.53,0.4831,0.4737,looks like a missed split/bonus
+EVC,Entravision Communications Corporation Common Stock,2026-05-06,3.98,7.69,1.9322,2.0,looks like a missed split/bonus
+FIRY,Firy Inc. Class A Common Stock,2026-04-23,3.68,12.45,3.3832,3.0,"no clean ratio (crash, spin-off or bad data?)"
+IGR,CBRE Global Real Estate Income Fund Common Shares of Beneficial Interest,2026-01-02,1.46,4.39,3.0068,3.0,looks like a missed split/bonus
+KD,"Kyndryl Holdings, Inc. Common Stock",2026-02-09,23.49,10.59,0.4508,0.4545,looks like a missed split/bonus
+KLC,"KinderCare Learning Companies, Inc. Common Stock",2026-08-14,4.83,2.6,0.5383,0.5385,looks like a missed split/bonus
+LVWR,"LiveWire Group, Inc. Common Stock",2026-07-24,0.77,1.46,1.8961,2.0,looks like a missed split/bonus
+PRIM,Primoris Services Corporation Common Stock,2026-05-06,202.92,101.23,0.4989,0.5,looks like a missed split/bonus
+SOC,Sable Offshore Corp. Common Stock,2026-06-30,6.97,3.08,0.4419,0.4444,looks like a missed split/bonus
+SOS,SOS Limited Class A Ordinary Shares,2026-09-22,0.768,0.349,0.4544,0.4545,looks like a missed split/bonus
+SST,"System1, Inc. Class A Common Stock",2026-03-27,1.37,3.32,2.4234,3.0,"no clean ratio (crash, spin-off or bad data?)"
+STG,"Sunlands Technology Group American Depositary Shares, representing Class A ordinary shares",2026-05-29,2.72,6.14,2.2574,2.0,"no clean ratio (crash, spin-off or bad data?)"
+TGE,The Generation Essentials Group Class A Ordinary Shares,2026-09-30,0.83,1.55,1.8675,2.0,"no clean ratio (crash, spin-off or bad data?)"
+UTZ,Utz Brands Inc Class A Common Stock,2026-07-21,7.45,14.06,1.8872,2.0,looks like a missed split/bonus
+XPOF,"Xponential Fitness, Inc. Class A Common Stock",2026-02-27,8.05,4.26,0.5292,0.5294,looks like a missed split/bonus

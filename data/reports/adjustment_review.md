@@ -3,36 +3,25 @@
 One-day RAW price moves no split explains. `looks like a missed split` = the ratio is a usual split ratio, so Yahoo probably missed an event.
 To fix one, add to data/manual_adjustments.json: `{"TICKER": [{"ex_date": "YYYY-MM-DD", "factor": 0.5, "description": "missed 2:1 split"}]}`
 
-Jumps: 528, of which look like missed splits: 393
+Jumps: 516, of which look like missed splits: 381
 
 | ticker | company | date | prev | close | ratio | nearest | note |
 |---|---|---|---|---|---|---|---|
-| UVV | Universal Corporation Common Stock | 1975-11-12 | 39.75 | 20.0 | 0.5031 | 0.5 | looks like a missed split/bonus |
-| MRSH | Marsh Common Stock | 1980-11-12 | 62.0 | 30.0 | 0.4839 | 0.4737 | looks like a missed split/bonus |
-| NL | NLI Holdings, Inc. Common Stock | 1981-05-22 | 76.0 | 38.625 | 0.5082 | 0.5 | looks like a missed split/bonus |
 | THC | Tenet Healthcare Corporation Common Stock | 1981-04-30 | 44.0 | 23.5 | 0.5341 | 0.5333 | looks like a missed split/bonus |
 | WTRG | Essential Utilities, Inc. Common Stock | 1981-07-08 | 47.5 | 8.125 | 0.1711 | 0.1667 | looks like a missed split/bonus |
-| BBWI | Bath & Body Works, Inc. | 1982-11-23 | 41.75 | 20.875 | 0.5 | 0.5 | looks like a missed split/bonus |
 | LXU | LSB Industries, Inc. Common Stock | 1982-12-01 | 2.25 | 0.75 | 0.3333 | 0.3333 | looks like a missed split/bonus |
 | LXU | LSB Industries, Inc. Common Stock | 1982-12-08 | 1.5 | 0.75 | 0.5 | 0.5 | looks like a missed split/bonus |
 | SU | Suncor Energy  Inc. Common Stock | 1982-04-01 | 0.9375 | 1.875 | 2.0 | 2.0 | looks like a missed split/bonus |
 | SU | Suncor Energy  Inc. Common Stock | 1982-05-26 | 1.3125 | 5.0 | 3.8095 | 4.0 | looks like a missed split/bonus |
 | BBWI | Bath & Body Works, Inc. | 1983-06-14 | 53.0 | 28.625 | 0.5401 | 0.5385 | looks like a missed split/bonus |
 | NBR | Nabors Industries Ltd. | 1983-11-09 | 3.0 | 1.25 | 0.4167 | 0.4167 | looks like a missed split/bonus |
-| ODC | Oil-Dri Corporation Of America Common Stock | 1983-08-03 | 20.5 | 10.5 | 0.5122 | 0.5 | looks like a missed split/bonus |
-| TSN | Tyson Foods, Inc. Common Stock | 1983-04-18 | 30.25 | 15.0 | 0.4959 | 0.5 | looks like a missed split/bonus |
 | BEN | Franklin Templeton, Inc. Common Stock | 1984-12-31 | 24.25 | 9.75 | 0.4021 | 0.4 | looks like a missed split/bonus |
-| GL | Globe Life Inc. Common Stock | 1984-05-30 | 39.25 | 19.625 | 0.5 | 0.5 | looks like a missed split/bonus |
-| LNC | Lincoln National Corporation Common Stock | 1984-02-01 | 66.5 | 32.25 | 0.485 | 0.4737 | looks like a missed split/bonus |
 | WSO-B | Watsco, Inc. Class B Common Stock | 1984-06-20 | 13.75 | 7.125 | 0.5182 | 0.5263 | looks like a missed split/bonus |
-| BBWI | Bath & Body Works, Inc. | 1985-06-26 | 49.875 | 24.75 | 0.4962 | 0.5 | looks like a missed split/bonus |
-| GL | Globe Life Inc. Common Stock | 1985-09-17 | 45.0 | 21.875 | 0.4861 | 0.4737 | looks like a missed split/bonus |
 | TSN | Tyson Foods, Inc. Common Stock | 1985-04-16 | 43.0 | 18.5 | 0.4302 | 0.4286 | looks like a missed split/bonus |
 | TRV | The Travelers Companies, Inc. Common Stock | 1986-06-09 | 90.25 | 43.25 | 0.4792 | 0.4737 | looks like a missed split/bonus |
 | TSN | Tyson Foods, Inc. Common Stock | 1986-04-16 | 43.5 | 23.75 | 0.546 | 0.5455 | looks like a missed split/bonus |
 | NVR | NVR, Inc. Common Stock | 1987-06-23 | 47.125 | 10.25 | 0.2175 | 0.2222 | looks like a missed split/bonus |
 | CIA | Citizens, Inc. Class A Common Stock ($1.00 Par) | 1988-12-05 | 48.0 | 3.5 | 0.0729 | 0.0714 | looks like a missed split/bonus |
-| CPF | Central Pacific Financial Corp New | 1988-06-02 | 50.5 | 25.875 | 0.5124 | 0.5 | looks like a missed split/bonus |
 | KR | Kroger Company (The) Common Stock | 1988-10-31 | 58.0 | 18.25 | 0.3147 | 0.3077 | looks like a missed split/bonus |
 | KR | Kroger Company (The) Common Stock | 1988-12-05 | 18.25 | 9.5 | 0.5205 | 0.5263 | looks like a missed split/bonus |
 | LCII | LCI Industries | 1988-12-27 | 0.25 | 0.125 | 0.5 | 0.5 | looks like a missed split/bonus |
@@ -40,7 +29,6 @@ Jumps: 528, of which look like missed splits: 393
 | TYL | Tyler Technologies, Inc. Common Stock | 1988-08-22 | 17.375 | 7.125 | 0.4101 | 0.4118 | looks like a missed split/bonus |
 | PNW | Pinnacle West Capital Corporation Common Stock | 1989-12-07 | 5.375 | 10.25 | 1.907 | 2.0 | looks like a missed split/bonus |
 | BH | Biglari Holdings Inc. Class B Common Stock | 1990-11-28 | 9.25 | 2.0 | 0.2162 | 0.2222 | looks like a missed split/bonus |
-| CRD-B | Crawford & Company Common Stock | 1990-08-01 | 31.375 | 15.875 | 0.506 | 0.5 | looks like a missed split/bonus |
 | MUX | McEwen Inc. Common Stock | 1990-02-20 | 1.3117 | 0.478 | 0.3644 | 0.3636 | looks like a missed split/bonus |
 | RRC | Range Resources Corporation Common Stock | 1990-04-10 | 0.375 | 0.125 | 0.3333 | 0.3333 | looks like a missed split/bonus |
 | WPP | WPP plc American Depositary Shares | 1990-11-20 | 11.375 | 5.5 | 0.4835 | 0.4737 | looks like a missed split/bonus |
@@ -207,3 +195,15 @@ Jumps: 528, of which look like missed splits: 393
 | BXMT | Blackstone Mortgage Trust, Inc. Common Stock | 2012-12-21 | 3.7 | 1.82 | 0.4919 | 0.5 | looks like a missed split/bonus |
 | GDOT | Green Dot Corporation Class A Common Stock, $0.001 par value | 2012-07-27 | 23.32 | 9.06 | 0.3885 | 0.3846 | looks like a missed split/bonus |
 | MTG | MGIC Investment Corporation Common Stock | 2012-08-02 | 2.45 | 0.88 | 0.3592 | 0.3571 | looks like a missed split/bonus |
+| OGG | Osisko Gold Group Inc. Common Shares | 2012-11-28 | 0.08 | 0.04 | 0.5 | 0.5 | looks like a missed split/bonus |
+| PARR | Par Pacific Holdings, Inc.  Common Stock | 2012-09-14 | 0.48 | 1.0 | 2.0833 | 2.0 | looks like a missed split/bonus |
+| SGI | Somnigroup International Inc. Common Stock | 2012-06-06 | 43.67 | 22.39 | 0.5127 | 0.5 | looks like a missed split/bonus |
+| SKE | Skeena Resources Limited Common Shares | 2012-07-24 | 0.017 | 0.05 | 2.9412 | 3.0 | looks like a missed split/bonus |
+| ARIS | Aris Mining Corporation Common Shares | 2013-06-19 | 3.96 | 2.13 | 0.5379 | 0.5385 | looks like a missed split/bonus |
+| GRBK | Green Brick Partners, Inc. Common Stock | 2013-11-06 | 2.66 | 1.45 | 0.5451 | 0.5455 | looks like a missed split/bonus |
+| LAR | Lithium Argentina AG Common Shares | 2013-09-13 | 0.15 | 0.44 | 2.9333 | 3.0 | looks like a missed split/bonus |
+| LAR | Lithium Argentina AG Common Shares | 2013-09-16 | 0.44 | 0.2 | 0.4545 | 0.4545 | looks like a missed split/bonus |
+| LEU | Centrus Energy Corp. Class A Common Stock | 2013-07-22 | 6.05 | 11.98 | 1.9802 | 2.0 | looks like a missed split/bonus |
+| LEU | Centrus Energy Corp. Class A Common Stock | 2013-12-16 | 8.81 | 3.51 | 0.3984 | 0.4 | looks like a missed split/bonus |
+| NVGS | Navigator Holdings Ltd. Ordinary Shares (Marshall Islands) | 2013-11-21 | 60.0 | 20.0 | 0.3333 | 0.3333 | looks like a missed split/bonus |
+| OGG | Osisko Gold Group Inc. Common Shares | 2013-11-12 | 0.024 | 0.01 | 0.4167 | 0.4167 | looks like a missed split/bonus |

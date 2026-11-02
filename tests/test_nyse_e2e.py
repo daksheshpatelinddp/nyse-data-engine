@@ -48,7 +48,9 @@ WORLD = {"AAA": dict(start="2024-11-01", splits=[("2025-02-03", 2, 1)], divs=[("
          "EEE": dict(start="2024-11-01", splits=[], divs=[("2025-04-02", 1.0)]),
          "FFF": dict(start="2024-11-01", splits=[], divs=[]),
          "GGG": dict(start="2024-11-01", splits=[], divs=[]),
-         "BRK-B": dict(start="2024-11-01", splits=[], divs=[])}
+         "BRK-B": dict(start="2024-11-01", splits=[], divs=[]),
+         "^GSPC": dict(start="2024-11-01", splits=[], divs=[]),
+         "^NYA": dict(start="2024-11-01", splits=[], divs=[])}
 STATE = {"last": "2025-03-31", "fail": set()}
 
 def dstr(ts): return datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d")
@@ -82,7 +84,7 @@ def fake_chart(session, sym, p1, p2):
     return "ok", js
 
 def NOW(d): return datetime.strptime(d + " 22:30", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)      # 18:30 New York = after the 17:00 cut-off
-NAMES = [("AAA", "AAA Corp"), ("CCC", "CCC Inc"), ("DDD", "DDD Co"), ("EEE", "EEE Co"), ("FFF", "FFF Co"), ("GGG", "GGG Co"), ("BRK-B", "Berkshire B")]
+NAMES = [("AAA", "AAA Corp"), ("CCC", "CCC Inc"), ("DDD", "DDD Co"), ("EEE", "EEE Co"), ("FFF", "FFF Co"), ("GGG", "GGG Co"), ("BRK-B", "Berkshire B"), ("^GSPC", "S&P 500 Index")]
 
 # ---- the ticker list parser --------------------------------------------------------------------------------------------------
 txt = ("ACT Symbol|Security Name|Exchange|CQS Symbol|ETF|Round Lot Size|Test Issue|NASDAQ Symbol\n"
@@ -98,7 +100,7 @@ store = LocalStore(os.path.join(tmp, "r2"))
 # ---- 1. first run: full history of every ticker -----------------------------------------------------------------------------
 assert fetch.ny_end_date(datetime(2025, 3, 31, 14, 0, tzinfo=timezone.utc)) == "2025-03-30", "before 17:00 New York the day is not final yet"
 st = fetch.run(session=object(), chart=fake_chart, symbols=NAMES, now=NOW("2025-03-31"))
-assert st["backfilled"] == 6 and st["no_data"] == 1 and st["failed"] == 0, st
+assert st["backfilled"] == 7 and st["no_data"] == 1 and st["failed"] == 0, st
 files = sorted(os.path.relpath(os.path.join(d, f), DATA) for d, _, fs in os.walk(os.path.join(DATA, "raw")) for f in fs)
 assert "raw/2024/2024-11.parquet" in files and "raw/2025/2025-02.parquet" in files, files
 assert "raw/2025/2025-03-31.parquet" in files and "raw/2025/2025-03.parquet" not in files, "current month: one small file per day"
@@ -122,18 +124,18 @@ allp = pd.concat([pio.read_bytes(store.get(f"nyse/{first}.parquet")), pio.read_b
 cl = lambda sym: allp[allp.symbol == sym].set_index("date")["close"]
 assert cl("AAA")["2024-12-02"] == 49.0 and cl("AAA")["2025-02-10"] == 49.0 and cl("AAA")["2025-03-31"] == 50.0 and cl("AAA")["2025-03-03"] == 50.0, cl("AAA").to_dict()
 assert cl("FFF")["2024-12-02"] == 80.0, "a split Yahoo missed is NOT guessed: it stays unadjusted and is reported"
-assert set(allp.symbol) == {"AAA", "DDD", "EEE", "FFF", "GGG", "BRK-B"}, set(allp.symbol)
+assert set(allp.symbol) == {"AAA", "DDD", "EEE", "FFF", "GGG", "BRK-B", "^GSPC"}, set(allp.symbol)
 assert list(pio.read_bytes(store.get(f"nyse/{cur}.parquet")).columns) == ["symbol", "date", "open", "high", "low", "close", "volume", "delivery"]
 assert not [k for k, _, _ in store.list("nyse/") if "raw" in k], "raw prices must never reach R2"
 rev = pd.read_csv(os.path.join(DATA, "reports", "review_jumps.csv"), dtype=str)
 assert list(rev.ticker) == ["FFF"] and rev.note[0].startswith("looks like a missed split"), rev.to_dict("records")
 man = json.loads(store.get("nyse/manifest.json"))
-assert man["format"] == 2 and man["currentPeriod"] == cur and man["aliases"]["BRK.B"] == "BRK-B" and len(man["buckets"]) == 3, man["aliases"]
+assert man["format"] == 2 and man["currentPeriod"] == cur and man["aliases"]["BRK.B"] == "BRK-B" and man["aliases"]["SPX"] == "^GSPC" and man["aliases"]["GSPC"] == "^GSPC" and len(man["buckets"]) == 4, man["aliases"]
 bname = [n for n, v in man["buckets"].items() if "AAA" in v["symbols"]][0]
 off, ln, n = man["packs"]["buckets"][bname]["idx"]["AAA"]
 blk = decode_pack_block(store.get(f"nyse/{man['packs']['path']}/{bname}.pack")[off:off + ln])
 assert len(blk["dates"]) == n and abs(blk["close"][0] - 49.0) < 1e-9, blk["close"][:3]
-sy = json.loads(store.get("nyse/symbols.json")); assert sorted(sy["symbols"]) == ["AAA", "BRK-B", "DDD", "EEE", "FFF", "GGG"], sy
+sy = json.loads(store.get("nyse/symbols.json")); assert sorted(sy["symbols"]) == ["AAA", "BRK-B", "DDD", "EEE", "FFF", "GGG", "^GSPC"], sy
 print("build 1 ok (split + dividend + alias + missed-split report); R2 writes:", build.PUTS["n"])
 fp1 = man["fingerprint"]
 build.run(store); assert build.PUTS["n"] == 0, f"unchanged data must not write to R2, wrote {build.PUTS['n']}"
@@ -169,6 +171,19 @@ assert g == ["2025-04-01", "2025-04-02", "2025-04-03", "2025-04-04", "2025-04-07
 assert json.load(open(os.path.join(DATA, "state.json")))["retry"] == {}
 assert not raw.duplicated(["scrip_code", "date"]).any()
 print("retry ok: the missing days of GGG were filled in")
+
+# ---- 4b. indices only: a new index is added without touching the stocks ---------------------------------------------------------------
+state_before = json.load(open(os.path.join(DATA, "state.json")))
+STATE["last"] = "2025-04-08"; os.environ["INDEX_ONLY"] = "true"
+fetch.run(session=object(), chart=fake_chart, symbols=NAMES + [("BBB", "BBB Co"), ("^NYA", "NYSE Composite")], now=NOW("2025-04-08"))
+del os.environ["INDEX_ONLY"]
+state_after = json.load(open(os.path.join(DATA, "state.json")))
+assert state_after["fetched_through"] == state_before["fetched_through"] == "2025-04-07", "index-only must not move the stock bookkeeping"
+raw = pd.concat([rawstore.read_period(p) for p in rawstore.periods()])
+assert raw[raw.scrip_code == "^NYA"].date.min() == "2024-11-01" and raw[raw.scrip_code == "^NYA"].date.max() == "2025-04-08", "the new index has its full history"
+assert raw[raw.scrip_code == "AAA"].date.max() == "2025-04-07", "stocks were not fetched in an index-only run"
+assert "^NYA" in state_after["backfilled"] and "AAA" in state_after["backfilled"]
+print("index-only run ok")
 
 # ---- 5. too many failures: nothing is stored ------------------------------------------------------------------------------------------
 STATE["last"] = "2025-04-08"; STATE["fail"] = set(WORLD)

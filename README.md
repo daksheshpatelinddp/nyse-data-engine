@@ -16,6 +16,15 @@ the history/pack/manifest files go to Cloudflare R2 (bucket `nse-stock-data`, fo
 3. Actions -> **NYSE Upload to R2** -> tick `force_all` -> Run. This is the only workflow that writes to R2 (first upload: a few hundred writes).
 4. Afterwards the daily fetch runs by itself on weekdays. Run the upload by hand when you want R2 updated (normally a daily upload = about 3 writes), and once a week with `weekly_run` ticked to apply dividends.
 
+## Indices
+Indices: all the NYSE-family indices: NYSE Composite, International 100, World Leaders, US 100, American Composite, Arca Major Market and the NYSE Arca sector indices are fetched from Yahoo like stocks and stored in the same database. In the app an index is found with or without the `^` (`NYA` finds `^NYA`). Only this market's indices are in this database; for any others use `index_symbols`.
+* **Add them now, without touching the stocks:** Actions -> **NYSE Indices Fetcher** -> Run workflow (about 1 minute), then **NYSE Upload to R2** with `force_all` ticked.
+* **Afterwards** the normal **Daily NYSE Fetcher** updates the indices together with the stocks. Change the list with the `index_symbols` box (`none` = no indices).
+* After the first run read the `[INDEX]` lines of the log: each index shows its first and last date and last close, so a wrong or unknown Yahoo ticker is easy to spot ("no data" = Yahoo does not have it).
+* Indices have no splits or dividends, so nothing is adjusted. Their volume on Yahoo is often 0. They are left out of `review_jumps.csv`.
+
+The list is in `INDEX_NAMES` (backend/fetch.py). The tickers are Yahoo's; the log of the indices run prints one `[INDEX]` line per ticker with its first and last date and last close, or `NO DATA on Yahoo` for a ticker Yahoo does not know. Such tickers are skipped and tried again after 30 days; send the log and the list can be corrected.
+
 ## Limits to know
 * Yahoo is unofficial; it can change or throttle. The fetch stops without saving anything if more than 2% of requests fail.
 * Yahoo has no delisted stocks, so the history has survivorship bias. Volume is as Yahoo gives it.

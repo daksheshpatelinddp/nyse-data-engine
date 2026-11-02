@@ -241,6 +241,7 @@ def write_review(periods, names=None):
         ratio = df["close"] / prev
         tail = df.groupby("scrip_code").tail(1)
         bad = df[(ratio < JUMP_LOW) | (ratio > JUMP_HIGH)].assign(ratio=ratio, prev_close=prev)
+        bad = bad[~bad["scrip_code"].str.startswith("^")]            # indices (VIX etc.) move a lot: not reviewed here
         bad = bad[bad["date"].str[:4] >= p[:4]]                       # the carried-over row itself is not a candidate
         for r in bad.itertuples(index=False):
             if (r.scrip_code, r.date) in split_days or (r.scrip_code, r.date) in handled:

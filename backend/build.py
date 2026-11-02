@@ -319,11 +319,15 @@ def build_recent(store, periods, sym_of, adj):
 
 
 def build_aliases(scrips, sym_of):
-    """Typing BRK.B (or brk b) finds BRK-B."""
+    """Typing BRK.B finds BRK-B; GSPC or SPX finds ^GSPC."""
     out = {}
     for code, sym in sym_of.items():
         if "-" in sym:
             out[sym.replace("-", ".")] = sym
+        if sym.startswith("^"):                                     # ^GSPC is also found as GSPC and SPX
+            out.setdefault(sym[1:], sym)
+    if "^GSPC" in sym_of.values():
+        out["SPX"] = "^GSPC"
     return out
 
 

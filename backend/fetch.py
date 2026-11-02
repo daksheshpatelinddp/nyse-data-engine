@@ -12,7 +12,7 @@ Flow of one run:
   3. tickers not loaded yet: fetch the FULL daily history (explicit period1/period2: Yahoo's range=max returns only monthly bars)
   4. a run where more than MAX_FAIL_PCT % of the tickers fail stores nothing, so the next run simply tries again
 
-Environment (all optional): MAX_RUNTIME_MINUTES, REQUEST_DELAY (0.1 s), NYSE_EXCHANGES (N; add A for NYSE American, P for Arca), INCLUDE_ETF, INCLUDE_PREFERRED,
+Environment (all optional): MAX_RUNTIME_MINUTES, REQUEST_DELAY (0.1 s), NYSE_EXCHANGES (N; add A for NYSE American, P for Arca), INCLUDE_ETF, INCLUDE_PREFERRED, INDEX_SYMBOLS, INDEX_ONLY,
 HISTORY_START (1970-01-02), REFETCH_ALL, OVERLAP_DAYS (5), MAX_FAIL_PCT (2), NO_DATA_RETRY_DAYS (30), FLUSH_ROWS (1500000), LIMIT_SYMBOLS (testing).
 """
 import json
@@ -90,6 +90,22 @@ def _date(ts, offset=-18000):
 _SKIP_NAME = re.compile(r"\b(warrants?|rights?|units?|notes?|debentures?|preferred|pfd|pref)\b|%", re.I)
 
 
+INDEX_NAMES = {"^NYA": "NYSE Composite Index", "^NY": "NYSE US 100 Index", "^NYI": "NYSE International 100 Index", "^NYL": "NYSE World Leaders Index",
+               "^XAX": "NYSE American Composite Index", "^XMI": "NYSE Arca Major Market Index", "^XOI": "NYSE Arca Oil Index",
+               "^HUI": "NYSE Arca Gold BUGS Index", "^PSE": "NYSE Arca Tech 100 Index", "^BTK": "NYSE Arca Biotechnology Index",
+               "^DRG": "NYSE Arca Pharmaceutical Index", "^XCI": "NYSE Arca Computer Technology Index", "^IIX": "NYSE Arca Internet Index",
+               "^NWX": "NYSE Arca Networking Index", "^XNG": "NYSE Arca Natural Gas Index"}
+
+
+def index_list():
+    """Index tickers to fetch: INDEX_SYMBOLS (comma separated Yahoo tickers; empty = all of INDEX_NAMES; 'none' = no indices)."""
+    raw = (os.getenv("INDEX_SYMBOLS") or "").strip()
+    if raw.lower() == "none":
+        return []
+    toks = [t.strip().upper() for t in raw.split(",") if t.strip()] or list(INDEX_NAMES)
+    return [(t, INDEX_NAMES.get(t, t)) for t in toks]
+
+
 def parse_symbol_list(text):
     """nasdaqtrader otherlisted.txt -> [(yahoo ticker, name)] of the wanted exchanges. Warrants, rights, units, notes, preferred shares, ETFs and test issues are dropped."""
     lines = text.strip().splitlines()
@@ -116,11 +132,16 @@ def parse_symbol_list(text):
 
 
 def load_symbols(session):
+    """Stocks + indices. With INDEX_ONLY=true only the indices (no list download): used to add indices without touching the stocks."""
+    if _flag("INDEX_ONLY"):
+        return index_list()
     r = session.get(SYMDIR, timeout=60)
     r.raise_for_status()
     syms = parse_symbol_list(r.text)
     lim = int(_num_env("LIMIT_SYMBOLS", 0))
-    return syms[:lim] if lim else syms
+    syms = syms[:lim] if lim else syms
+    have = {t for t, _ in syms}
+    return syms + [(t, n) for t, n in index_list() if t not in have]
 
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -220,6 +241,8 @@ def update_scrips(scrips, sym, name, bars):
         lo, hi = bars["date"].min(), bars["date"].max()
         s["first"] = lo if not s.get("first") else min(s["first"], lo)
         s["last"] = hi if not s.get("last") else max(s["last"], hi)
+        if str(sym).startswith("^"):                                # indices: show what was loaded so a wrong Yahoo ticker is easy to spot
+            print(f"[INDEX] {sym} {name}: bars {lo} .. {hi}, last close {bars.sort_values('date')['close'].iloc[-1]:,.2f}")
 
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -244,6 +267,9 @@ def run(session=None, chart=get_chart, symbols=None, now=None):
         session.headers.update(HEADERS)
     if symbols is None:
         symbols = load_symbols(session)
+    index_only = _flag("INDEX_ONLY")
+    if index_only:                                                  # only the indices; the stock bookkeeping (fetched_through) is never touched
+        symbols = [s for s in symbols if s[0].startswith("^")]
     names = dict(symbols)
     state = load_json(STATE_FILE, {})
     days = set(state.get("days") or [])
@@ -274,7 +300,7 @@ def run(session=None, chart=get_chart, symbols=None, now=None):
         return bool(MAX_RUNTIME_MINUTES) and time.time() - SCRIPT_START > MAX_RUNTIME_MINUTES * 60
 
     # ---- 2. tickers already loaded: the last days --------------------------------------------------------------------------
-    todo_recent = [s for s, _ in symbols if s in backfilled]
+    todo_recent = [] if index_only else [s for s, _ in symbols if s in backfilled]
     if through and todo_recent:
         p1_new = _ts(through) - OVERLAP_DAYS * 86400
         frames, failed = [], []
@@ -345,14 +371,20 @@ def run(session=None, chart=get_chart, symbols=None, now=None):
         time.sleep(REQUEST_DELAY)
         parsed = parse_chart(js, sym) if status == "ok" else None
         if parsed is None or parsed[0].empty:
+            if sym.startswith("^") and status != "error":
+                print(f"[INDEX] {sym} {names.get(sym, '')}: NO DATA on Yahoo (ticker unknown; retried in {NO_DATA_RETRY_DAYS} days)")
             if status == "error":
                 stats["failed"] += 1
             else:
                 no_data[sym] = today.strftime("%Y-%m-%d")
                 stats["no_data"] += 1
+                if sym.startswith("^"):
+                    print(f"[INDEX] {sym} {names.get(sym, '')}: Yahoo has no data for this ticker (check the ticker; it is retried after {NO_DATA_RETRY_DAYS} days)")
             continue
         bars, splits, divs = parsed
         bars = bars[bars["date"] <= end]
+        if sym.startswith("^") and len(bars):
+            print(f"[INDEX] {sym} {names.get(sym, '')}: {bars['date'].min()} .. {bars['date'].max()}, {len(bars)} days, last close {bars['close'].iloc[-1]:.2f}")
         keep_events(sym, splits, divs)
         update_scrips(scrips, sym, names.get(sym), bars)
         no_data.pop(sym, None)
@@ -364,7 +396,7 @@ def run(session=None, chart=get_chart, symbols=None, now=None):
             flush()
             print(f"[FETCH] backfill progress: {i + 1}/{len(todo_full)} tickers")
     flush()
-    if not through and (backfilled or stats["rows"]):
+    if not through and not index_only and (backfilled or stats["rows"]):
         through = end                                               # first run: every loaded ticker holds data up to the last final day
     merged = rawstore.consolidate(cur_month)
     save_small()

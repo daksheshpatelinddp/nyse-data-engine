@@ -1,0 +1,61 @@
+name: "NYSE Indices Fetcher"
+
+# Fetches ONLY the index history from Yahoo (default: all the NYSE-family indices: NYSE Composite, International 100, World Leaders, US 100, American Composite, Arca Major Market and the NYSE Arca sector indices)
+# into the raw files in git. The stocks and their bookkeeping are not touched, so it is safe to run at any time, also before or after the stock download.
+# From then on the normal daily fetcher keeps the indices up to date together with the stocks.
+# Afterwards run "NYSE Upload to R2" (force_all) once so the indices appear in R2.
+
+on:
+  workflow_dispatch:
+    inputs:
+      index_symbols:
+        description: 'Yahoo index tickers, comma separated (empty = all NYSE indices in the list). Any other Yahoo index ticker works too, for example ^DJI. Use ^GSPC, not ^SPX'
+        required: false
+        default: ''
+      history_start:
+        description: 'First day of history, YYYY-MM-DD (empty = as far back as Yahoo goes)'
+        required: false
+        default: ''
+
+concurrency:
+  group: nyse-data
+  cancel-in-progress: false
+
+jobs:
+  indices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    env:
+      PERIOD_MODE: year
+      PYTHONUNBUFFERED: '1'
+      INDEX_ONLY: 'true'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy pyarrow boto3 requests
+
+      - name: Download the indices from Yahoo (raw prices into data/raw/)
+        env:
+          INDEX_SYMBOLS: ${{ github.event.inputs.index_symbols }}
+          HISTORY_START: ${{ github.event.inputs.history_start }}
+        run: python backend/fetch.py
+
+      - name: Save to git
+        if: ${{ !cancelled() }}
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add -A data/raw data/scrips.json data/state.json || true
+          git commit -m "NYSE indices" || exit 0
+          git pull --rebase origin main
+          git push origin main

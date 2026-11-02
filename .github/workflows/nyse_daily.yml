@@ -23,6 +23,10 @@ on:
         description: 'Fetch the FULL history again for every ticker (tick once after the 50-ticker test)'
         type: boolean
         default: false
+      index_symbols:
+        description: 'Indices fetched together with the stocks (empty = all NYSE indices in the list; none = no indices)'
+        required: false
+        default: ''
       check_adjustments:
         description: 'Run the dry-run build and write the review files (no R2)'
         type: boolean
@@ -62,6 +66,7 @@ jobs:
         env:
           HISTORY_START: ${{ github.event.inputs.history_start }}
           LIMIT_SYMBOLS: ${{ github.event.inputs.limit_symbols }}
+          INDEX_SYMBOLS: ${{ github.event.inputs.index_symbols }}
           REFETCH_ALL: ${{ github.event.inputs.refetch_all || 'false' }}
           MAX_RUNTIME_MINUTES: '270'     # stops itself after 4.5 h and keeps everything downloaded; run again to continue
         run: python backend/fetch.py

@@ -3,7 +3,7 @@
 One-day RAW price moves no split explains. `looks like a missed split` = the ratio is a usual split ratio, so Yahoo probably missed an event.
 To fix one, add to data/manual_adjustments.json: `{"TICKER": [{"ex_date": "YYYY-MM-DD", "factor": 0.5, "description": "missed 2:1 split"}]}`
 
-Jumps: 522, of which look like missed splits: 387
+Jumps: 521, of which look like missed splits: 386
 
 | ticker | company | date | prev | close | ratio | nearest | note |
 |---|---|---|---|---|---|---|---|

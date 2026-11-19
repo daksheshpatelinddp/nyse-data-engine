@@ -3,7 +3,7 @@
 One-day RAW price moves no split explains. `looks like a missed split` = the ratio is a usual split ratio, so Yahoo probably missed an event.
 To fix one, add to data/manual_adjustments.json: `{"TICKER": [{"ex_date": "YYYY-MM-DD", "factor": 0.5, "description": "missed 2:1 split"}]}`
 
-Jumps: 522, of which look like missed splits: 386
+Jumps: 524, of which look like missed splits: 387
 
 | ticker | company | date | prev | close | ratio | nearest | note |
 |---|---|---|---|---|---|---|---|
@@ -182,7 +182,7 @@ Jumps: 522, of which look like missed splits: 386
 | DAN | Dana Incorporated Common Stock | 2009-03-10 | 0.2 | 0.4 | 2.0 | 2.0 | looks like a missed split/bonus |
 | IDT | IDT Corporation Class B Common Stock | 2009-03-04 | 0.7062 | 1.3347 | 1.89 | 2.0 | looks like a missed split/bonus |
 | LYG | Lloyds Banking Group Plc American Depositary Shares | 2009-01-20 | 6.0547 | 2.5488 | 0.421 | 0.4167 | looks like a missed split/bonus |
-| MOD | Modine Manufacturing Company Common Stock | 2009-02-11 | 1.77 | 0.93 | 0.5254 | 0.5263 | looks like a missed split/bonus |
+| MOD | Modexus Solutions, Inc. Common Stock | 2009-02-11 | 1.77 | 0.93 | 0.5254 | 0.5263 | looks like a missed split/bonus |
 | NNI | Nelnet, Inc. Common Stock | 2009-02-26 | 10.74 | 4.91 | 0.4572 | 0.4545 | looks like a missed split/bonus |
 | NVGS | Navigator Holdings Ltd. Ordinary Shares (Marshall Islands) | 2009-03-05 | 37.25 | 12.0 | 0.3221 | 0.3333 | looks like a missed split/bonus |
 | NWG | NatWest Group plc American Depositary Shares, (each representing two (2) Ordinary Shares) | 2009-01-20 | 10.85 | 3.33 | 0.3069 | 0.3077 | looks like a missed split/bonus |

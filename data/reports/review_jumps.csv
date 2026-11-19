@@ -226,7 +226,7 @@ DCH,Dauch Corporation Common Stock,2009-08-18,2.62,5.7,2.1756,2.0,"no clean rati
 EVC,Entravision Communications Corporation Common Stock,2009-03-20,0.17,0.31,1.8235,2.0,"no clean ratio (crash, spin-off or bad data?)"
 IDT,IDT Corporation Class B Common Stock,2009-03-04,0.7062,1.3347,1.89,2.0,looks like a missed split/bonus
 LYG,Lloyds Banking Group Plc American Depositary Shares,2009-01-20,6.0547,2.5488,0.421,0.4167,looks like a missed split/bonus
-MOD,Modine Manufacturing Company Common Stock,2009-02-11,1.77,0.93,0.5254,0.5263,looks like a missed split/bonus
+MOD,"Modexus Solutions, Inc. Common Stock",2009-02-11,1.77,0.93,0.5254,0.5263,looks like a missed split/bonus
 NNI,"Nelnet, Inc. Common Stock",2009-02-26,10.74,4.91,0.4572,0.4545,looks like a missed split/bonus
 NVGS,Navigator Holdings Ltd. Ordinary Shares (Marshall Islands),2009-03-05,37.25,12.0,0.3221,0.3333,looks like a missed split/bonus
 NWG,"NatWest Group plc American Depositary Shares, (each representing two (2) Ordinary Shares)",2009-01-20,10.85,3.33,0.3069,0.3077,looks like a missed split/bonus
@@ -503,6 +503,7 @@ BUR,Burford Capital Limited Ordinary Shares,2026-03-27,7.83,4.14,0.5287,0.5294,l
 CDLR,Cadeler plc Ordinary Shares,2026-11-05,25.84,7.4,0.2864,0.2857,looks like a missed split/bonus
 EAF,GrafTech International Ltd. Common Stock,2026-02-06,15.69,8.44,0.5379,0.5385,looks like a missed split/bonus
 EFOR,"Everforth, Inc. Common Stock",2026-04-23,40.43,19.53,0.4831,0.4737,looks like a missed split/bonus
+EMBJ,Embraer S.A. Common Stock,2026-11-17,78.73,18.9,0.2401,0.25,looks like a missed split/bonus
 EVC,Entravision Communications Corporation Common Stock,2026-05-06,3.98,7.69,1.9322,2.0,looks like a missed split/bonus
 FIRY,Firy Inc. Class A Common Stock,2026-04-23,3.68,12.45,3.3832,3.0,"no clean ratio (crash, spin-off or bad data?)"
 IGR,CBRE Global Real Estate Income Fund Common Shares of Beneficial Interest,2026-01-02,1.46,4.39,3.0068,3.0,looks like a missed split/bonus
@@ -516,6 +517,7 @@ SLQT,"SelectQuote, Inc. Common Stock",2026-11-16,0.442,7.6,17.1946,10.0,"no clea
 SOC,Sable Offshore Corp. Common Stock,2026-06-30,6.97,3.08,0.4419,0.4444,looks like a missed split/bonus
 SOC,Sable Offshore Corp. Common Stock,2026-11-09,1.93,0.88,0.456,0.4545,looks like a missed split/bonus
 SOS,SOS Limited Class A Ordinary Shares,2026-09-22,0.768,0.349,0.4544,0.4545,looks like a missed split/bonus
+SOS,SOS Limited Class A Ordinary Shares,2026-11-17,0.197,4.214,21.3909,10.0,"no clean ratio (crash, spin-off or bad data?)"
 SST,"System1, Inc. Class A Common Stock",2026-03-27,1.37,3.32,2.4234,3.0,"no clean ratio (crash, spin-off or bad data?)"
 STG,"Sunlands Technology Group American Depositary Shares, representing Class A ordinary shares",2026-05-29,2.72,6.14,2.2574,2.0,"no clean ratio (crash, spin-off or bad data?)"
 TGE,The Generation Essentials Group Class A Ordinary Shares,2026-09-30,0.83,1.55,1.8675,2.0,"no clean ratio (crash, spin-off or bad data?)"
